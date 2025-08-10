@@ -22,7 +22,7 @@ const ProjectBlackLanding = () => {
           <button className="cta-button">Join Now</button>
 
           <div className="countdown-wrapper">
-            <p className="coming-soon">Coming Soon (31 December 2025)</p>
+            <p className="coming-soon">Coming Soon (13 December 2025)</p>
             <FlipClock /> 
           </div>
         </div>

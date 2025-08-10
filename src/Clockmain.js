@@ -66,7 +66,7 @@ const FlipUnitContainer1 = ({ digit, shuffle, unit }) => {
 const CountdownClock1 = () => {
   const calculateTimeLeft1 = () => {
     const now1 = new Date();
-    const target1 = new Date('2025-12-31T23:59:59');
+    const target1 = new Date('2025-12-13T23:59:59');
     const diff1 = target1 - now1;
 
     const totalSeconds1 = Math.floor(diff1 / 1000);
