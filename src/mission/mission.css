@@ -57,6 +57,7 @@
 .merch-card {
   width: 364.44px;
   height: 363.97px;
+  transition: all 0.1s ease;
   cursor: pointer;
   position: relative;
   overflow: visible;
@@ -70,12 +71,14 @@
   height: 363.97px;
   border-radius: 20px;
   object-fit: cover;
+  transition: all 0.4s ease;
 }
 
 .merch-info {
   text-align: left;
   position: relative;
   min-height: 50px;
+  width: 100%;
 }
 
 .merch-info h3 {
@@ -87,45 +90,43 @@
   font-size: 18px;
   line-height: 100%;
   margin-top: -20px !important;
-  display: block;
+  transition: opacity 0.3s ease;
 }
 
-/* Hidden state using display: none */
 .merch-descr {
-  display: none;
-  width: 100%;
-  box-sizing: border-box;
-  justify-content: center;
   position: absolute;
   left: 0;
   bottom: 5px;
-  padding: 15px 15px;
-  text-align: center;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
   color: #000;
   border-radius: 0 0 12px 12px;
-  height: 50px;
+  transition: height 0.3s ease;
 }
 
-/* Show on hover */
-.merch-card:hover .merch-descr,
-.merch-card.hovered .merch-descr {
-  display: flex;
+.merch-card:hover .merch-descr {
+  height: 55px;
 }
 
-/* Hide Heritage Drip text on hover */
-.merch-card:hover .merch-info h3,
-.merch-card.hovered .merch-info h3 {
-  display: none;
+.merch-card:hover .merch-info h3 {
+  opacity: 0;
 }
 
-.merch-image {
-  display: block;
-  margin-bottom: 10px;
+.merch-descr p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .arrow-icon {
   font-size: 20px;
+  margin-left: 10px;
+  transition: opacity 0.3s ease;
 }
 
 .merch-card.hovered .merch-descr {
@@ -138,7 +139,7 @@
 }
 
 .merch-card.hovered .arrow-icon {
-  display: none;
+  opacity: 0;
 }
 
 .merch-card.hovered .merch-image {
