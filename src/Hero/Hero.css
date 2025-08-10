@@ -132,7 +132,7 @@ body, html {
 
 @media (min-width: 2560px)  {
   .img-frame {
-    width: 80%;     /* Slightly wider than the heading */
+    /* width: 80%;     Slightly wider than the heading */
     max-width: none;  /* Allows more growth without overflowing too far */
     bottom: -15px;   /* Adjust position for larger heading */
   }

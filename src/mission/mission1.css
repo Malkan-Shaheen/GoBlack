@@ -191,10 +191,11 @@
   min-width: 50px !important;
   width: 100%;
   box-sizing: border-box;
-  max-width: 250px;
+  max-width: 100%;
   border: 2px solid transparent !important;
 
 }
+
 
 .merch-card.hovered .merch-info {
   width: 100%;
