@@ -93,36 +93,30 @@
 }
 
 /* Smooth hidden state (no display toggle) */
-/* Smooth hidden state */
 .merch-descr {
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
-  width: 60%;            /* start smaller */
-  height: 40px;          /* start smaller */
-  transition: 
-    opacity 0.3s ease, 
-    transform 0.3s ease,
-    width 0.3s ease, 
-    height 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  padding: 15px 15px;
+  text-align: center;
   background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
   color: #000;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
+  border-radius: 0 0 12px 12px;
 }
 
-/* Hover — expand smoothly */
+/* Show smoothly on hover */
 .merch-card:hover .merch-descr {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
-  width: 100%;           /* full size */
-  height: 50px;          /* full height */
 }
-
 
 /* Hide Heritage Drip text on hover */
 .merch-card:hover .merch-info h3 {
