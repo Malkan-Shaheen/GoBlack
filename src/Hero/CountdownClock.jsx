@@ -16,48 +16,50 @@ const StaticCard = ({ position, digit }) => (
 
 const FlipUnitContainer = ({ digit, shuffle, unit }) => {
   const [previousDigit, setPreviousDigit] = useState(digit);
+  const [currentDigit, setCurrentDigit] = useState(digit);
   const [shouldFlip, setShouldFlip] = useState(false);
-  const [displayDigit, setDisplayDigit] = useState(digit);
 
   useEffect(() => {
     if (shuffle) {
-      // First, set the previous digit to the current display digit
-      setPreviousDigit(displayDigit);
-      // Then immediately update the display digit and trigger flip
-      setDisplayDigit(digit);
-      setShouldFlip(true);
-      
-      const flipTimer = setTimeout(() => {
+      setPreviousDigit(currentDigit); // Keep old digit showing
+      setShouldFlip(true); // Start flip immediately
+
+      // Change the digit halfway through the flip
+      const halfway = setTimeout(() => {
+        setCurrentDigit(digit);
+      }, 300); // Half of animation duration (0.6s)
+
+      // End flip animation after full duration
+      const endFlip = setTimeout(() => {
         setShouldFlip(false);
-      }, 500); // Match this with your animation duration
-      return () => clearTimeout(flipTimer);
+      }, 600); // Matches your CSS animation duration
+
+      return () => {
+        clearTimeout(halfway);
+        clearTimeout(endFlip);
+      };
     }
-  }, [shuffle, digit, displayDigit]);
+  }, [shuffle, digit, currentDigit]);
 
-  let currentDigit = displayDigit;
-  let prevDigit = previousDigit;
-
-  // Format digits
-  if (unit === 'seconds' || unit === 'minutes') {
-    prevDigit = prevDigit > 59 ? 0 : prevDigit;
-    currentDigit = currentDigit > 59 ? 0 : currentDigit;
-  } else if (unit === 'hours') {
-    prevDigit = prevDigit > 23 ? 0 : prevDigit;
-    currentDigit = currentDigit > 23 ? 0 : currentDigit;
-  }
-
-  if (currentDigit < 10) currentDigit = `0${currentDigit}`;
-  if (prevDigit < 10) prevDigit = `0${prevDigit}`;
+  // Format for leading zeros
+  const formatDigit = (num) => (num < 10 ? `0${num}` : num);
 
   return (
     <div className="flipUnitContainer">
-      <div class="midline-dots"></div>
-      <StaticCard position="upperCard" digit={currentDigit} />
-      <StaticCard position="lowerCard" digit={shouldFlip ? prevDigit : currentDigit} />
+      <div className="midline-dots"></div>
+
+      {/* Static cards */}
+      <StaticCard position="upperCard" digit={formatDigit(currentDigit)} />
+      <StaticCard
+        position="lowerCard"
+        digit={shouldFlip ? formatDigit(previousDigit) : formatDigit(currentDigit)}
+      />
+
+      {/* Animated flipping cards */}
       {shouldFlip && (
         <>
-          <AnimatedCard digit={prevDigit} animation="fold" />
-          <AnimatedCard digit={currentDigit} animation="unfold" />
+          <AnimatedCard digit={formatDigit(previousDigit)} animation="fold" />
+          <AnimatedCard digit={formatDigit(digit)} animation="unfold" />
         </>
       )}
     </div>

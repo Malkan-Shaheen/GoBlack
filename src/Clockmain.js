@@ -16,43 +16,54 @@ const StaticCard1 = ({ position, digit }) => (
 
 const FlipUnitContainer1 = ({ digit, shuffle, unit }) => {
   const [previousDigit, setPreviousDigit] = useState(digit);
-  const [shouldFlip, setShouldFlip] = useState(false);
   const [displayDigit, setDisplayDigit] = useState(digit);
+  const [shouldFlip, setShouldFlip] = useState(false);
 
   useEffect(() => {
     if (shuffle) {
-      // First, set the previous digit to the current display digit
-      setPreviousDigit(displayDigit);
-      // Then immediately update the display digit and trigger flip
-      setDisplayDigit(digit);
-      setShouldFlip(true);
-      
-      const flipTimer = setTimeout(() => {
+      setPreviousDigit(displayDigit); // Keep old digit visible
+      setShouldFlip(true); // Start flip immediately
+
+      // Change digit halfway through animation
+      const halfwayTimer = setTimeout(() => {
+        setDisplayDigit(digit);
+      }, 250); // Half of 500ms animation
+
+      // Stop flipping after animation ends
+      const endTimer = setTimeout(() => {
         setShouldFlip(false);
-      }, 500); // Match this with your animation duration
-      return () => clearTimeout(flipTimer);
+      }, 500); // Match animation duration
+
+      return () => {
+        clearTimeout(halfwayTimer);
+        clearTimeout(endTimer);
+      };
     }
   }, [shuffle, digit, displayDigit]);
 
   let currentDigit = displayDigit;
   let prevDigit = previousDigit;
 
-  // Format digits
-  if (unit === 'seconds1' || unit === 'minutes1') {
+  // Clamp values for clock units
+  if (unit === "seconds1" || unit === "minutes1") {
     prevDigit = prevDigit > 59 ? 0 : prevDigit;
     currentDigit = currentDigit > 59 ? 0 : currentDigit;
-  } else if (unit === 'hours1') {
+  } else if (unit === "hours1") {
     prevDigit = prevDigit > 23 ? 0 : prevDigit;
     currentDigit = currentDigit > 23 ? 0 : currentDigit;
   }
 
+  // Format to two digits
   if (currentDigit < 10) currentDigit = `0${currentDigit}`;
   if (prevDigit < 10) prevDigit = `0${prevDigit}`;
 
   return (
     <div className="flipUnitContainer1">
       <StaticCard1 position="upperCard1" digit={currentDigit} />
-      <StaticCard1 position="lowerCard1" digit={shouldFlip ? prevDigit : currentDigit} />
+      <StaticCard1
+        position="lowerCard1"
+        digit={shouldFlip ? prevDigit : currentDigit}
+      />
       {shouldFlip && (
         <>
           <AnimatedCard1 digit={prevDigit} animation="fold1" />
@@ -62,6 +73,7 @@ const FlipUnitContainer1 = ({ digit, shuffle, unit }) => {
     </div>
   );
 };
+
 
 const CountdownClock1 = () => {
   const calculateTimeLeft1 = () => {
