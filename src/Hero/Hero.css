@@ -224,7 +224,8 @@ body, html {
 }
 
 .cta-button:hover {
-  background: #e0e0e0;
+  background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
+  color:white;
 }
 
 .countdown-wrapper {
