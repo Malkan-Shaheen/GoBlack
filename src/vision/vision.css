@@ -186,7 +186,7 @@
 /* Right vertical line is correct */
 .line-right-vertical {
   top: 135px;
-  right: 0px;
+  right: -10px;
   height: 140px;
 }
 

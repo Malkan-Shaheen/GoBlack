@@ -35,10 +35,11 @@ const Vision = () => {
     <div className="empower-desc-wrapper">
       <p className="empower-desc">
         Despite contributing $1.6 trillion annually to the U.S. economy, Black creators and businesses remain underrepresented. Project Black is here to change that.
-      </p>
+      </p><br/>
       <p className="empower-desc">
         We’re building a digital platform where culture, commerce, and community unite to shift narratives, multiply opportunity, and make Black excellence the rule—not the exception.
         <br />
+        
         Built for us. Backed by us. This is how we redefine the standard—together.
       </p>
     </div>
