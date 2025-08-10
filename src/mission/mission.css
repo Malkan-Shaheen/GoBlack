@@ -2,7 +2,6 @@
 
 .merch-section {
   background-color: transparent;
-  /* padding: 120px 20px 120px 20px; */
   position: relative;
   color: white;
   text-align: center;
@@ -58,7 +57,7 @@
 .merch-card {
   width: 364.44px;
   height: 363.97px;
-  transition: all 0.4s ease;
+  transition: all 0.1s ease;
   cursor: pointer;
   position: relative;
   overflow: visible;
@@ -68,17 +67,16 @@
 }
 
 .merch-image {
-      width: 364.44px;
-    height: 363.97px;
+  width: 364.44px;
+  height: 363.97px;
   border-radius: 20px;
   object-fit: cover;
   transition: all 0.4s ease;
 }
 
 .merch-info {
-  /* margin-top: 12px; */
   text-align: left;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   position: relative;
   min-height: 50px; 
 }
@@ -94,50 +92,47 @@
   margin-top: -34px !important;
 }
 
-/* Default merch-descr style (hidden until hover) */
-
-/* Hide Shop Now button by default */
+/* Smooth hidden state (no display toggle) */
 .merch-descr {
-  display: none; /* fully hidden */
-}
-
-/* Show Shop Now only when hovered */
-.merch-card:hover .merch-descr {
-  display: flex;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
   width: 100%;
   box-sizing: border-box;
   justify-content: center;
-  position: relative;
-  margin-top: 10px;
-  margin: 0;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
   padding: 15px 15px;
   text-align: center;
   background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
   color: #000;
   border-radius: 0 0 12px 12px;
-  position: absolute;
-  left: 0;
-  bottom: 5px;
-  width: 100% !important;
+}
+
+/* Show smoothly on hover */
+.merch-card:hover .merch-descr {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* Hide Heritage Drip text on hover */
 .merch-card:hover .merch-info h3 {
   display: none;
 }
+
 .merch-image {
   display: block;
-  margin-bottom: 10px; /* reserve space for gap + button */
+  margin-bottom: 10px;
 }
 
-
-/* Icon style */
 .arrow-icon {
   font-size: 20px;
   transition: opacity 0.3s ease;
 }
 
-/* Hover Effects */
 .merch-card.hovered .merch-descr {
   background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
   color: #000;
@@ -145,7 +140,6 @@
   font-size: 25px;
   justify-content: space-between;
   padding: 0px 14px;
-  /* margin-top: 20px !important; */
 }
 
 .merch-card.hovered .arrow-icon {
@@ -156,7 +150,6 @@
   transform: translateY(12px);
 }
 
-/* Background ellipse (blurred shade effect) */
 .merch-section {
   position: relative;
   overflow: visible;
@@ -190,7 +183,6 @@
   right: -150px;
 }
 
-/* If parent has background color, add this wrapper */
 .merch-section-wrapper {
   position: relative;
   overflow: hidden;
@@ -201,7 +193,6 @@
   .merch-heading h2 {
     font-size: 18px;
   }
-
   .merch-heading p,
   span {
     display: none;
@@ -213,52 +204,42 @@
     padding: 80px 16px;
     margin-top: 150px;
   }
-
   .merch-heading h2 {
     font-size: 24px;
   }
-
   .merch-heading p {
     font-size: 14px;
     width: 90%;
   }
-
   .merch-card {
     width: 100%;
   }
-
   .merch-image {
     height: auto;
     max-height: 300px;
-    /* margin-bottom: 50px; */
   }
   .merch-card.hovered .merch-descr {
-  background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
-  color: #000;
-  border-radius: 12px;
-  font-size: 25px;
-  min-width: 90px;
-  justify-content: space-between;
-  /* margin-top: 20px !important; */
-}
-
+    background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
+    color: #000;
+    border-radius: 12px;
+    font-size: 25px;
+    min-width: 90px;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .merch-heading h2 {
     font-size: 20px;
   }
-
   .merch-heading p,
   .merch-heading span {
     display: none;
   }
-
   .merch-grid {
     gap: 20px;
     margin-top: 40px;
   }
-
   .merch-image {
     max-height: 250px;
   }
@@ -276,16 +257,11 @@
 
 @media screen and (max-width: 968px) {
   .merch-descr {
-    display: flex !important;
-    box-sizing: border-box !important;
-    width: 100% !important;
     justify-content: center !important;
-    /* margin-top: 8px !important; */
     margin-right: 0px !important;
   }
 }
 
-/* Remove large-screen extra gaps without affecting other breakpoints */
 @media screen and (min-width: 768px) {
   .merch-section {
     padding-top: 0 !important;
@@ -293,7 +269,6 @@
     margin-top: 0 !important;
     margin-bottom: 0 !important;
   }
-
   .merch-heading h2 {
     margin-top: 0 !important;
   }
