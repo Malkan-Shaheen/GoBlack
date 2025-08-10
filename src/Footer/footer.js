@@ -22,8 +22,12 @@ const Footer = () => {
             <button className="footer-icon" onClick={() => console.log('Twitter clicked')}>
   <img src={twitterIcon} alt="Twitter" className="footer-icon" />
 </button>
-            <button className="footer-icon" onClick={() => console.log('Facebook clicked')}><i className="fab fa-facebook-f"></i></button>
-            <button className="footer-icon" onClick={() => console.log('Instagram clicked')}><i className="fab fa-instagram"></i></button>
+           <button className="footer-icon" onClick={() => window.open('https://facebook.com/groups/1552740565408393/', '_blank')}>
+  <i className="fab fa-facebook-f"></i>
+</button>
+<button className="footer-icon" onClick={() => window.open('https://www.instagram.com/officialprojectblack?igsh=YTNtMjl4NW9hbmcz', '_blank')}>
+  <i className="fab fa-instagram"></i>
+</button>
           </div>
         </div>
       </div>
