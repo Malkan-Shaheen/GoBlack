@@ -51,7 +51,7 @@ Black Box: WELCOME TO EXCELLENCE – The Seed
     image: manImg,
     icon: icon2,
     activeIcon: Aicon2,
-    title: "Growth Phase",
+    title: "The Pillar : Growth Phase",
     price: "$50 (Limited Time) / Annum",
     text: `Designed for growing businesses, creators, and professionals ready to scale, The Pillar unlocks premium access to Project Black’s tools and opportunities.
 
@@ -61,14 +61,14 @@ Benefits:
 • Discounts on Project Black University courses & workshops
 • Priority directory placement
 
-Black Box: WELCOME TO EXCELLENCE – The Seed
+Black Box: WELCOME TO EXCELLENCE – The Pillar
   `
   },
   {
     image: womanImg,
     icon: icon3,
     activeIcon: Aicon3,
-    title: "Established Root",
+    title: "The Flame : Established Root",
     price: "$50 (Limited Time) / Annum",
     text: `The Flame is built for innovators, thought leaders, and culture shapers who want to amplify their presence, launch initiatives, and receive exclusive Project Black perks.
 
@@ -85,15 +85,16 @@ Black Box: WELCOME TO EXCELLENCE – The Flame
     image: crownImg,
     icon: icon4,
     activeIcon: Aicon4,
-    title: "Harvesting Change",
+    title: "The Crown : Harvesting Change",
     price: "$50 (Limited Time) / Annum",
     text: `Invite-only or application-based, The Crown is for serious investors, changemakers, and top-tier leaders committed to investing in the future of Black (Invite Only)
+
 Benefits:
-• All Flame perks included
-• Direct influence in Project Black's future (voting, advisory, partnerships)
-• Premium VIP access to travel, dining, and elite experiences
-• Custom badge + Letterman jacket
-• Exclusive access to The Black Card legacy tier
+ • All Flame perks included
+ • Direct influence in Project Black's future (voting, advisory, partnerships)
+ • Premium VIP access to travel, dining, and elite experiences
+ • Custom badge + Letterman jacket
+ • Exclusive access to The Black Card legacy tier
 
 Black Box: WELCOME TO EXCELLENCE – The Crown
  `
