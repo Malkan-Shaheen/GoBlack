@@ -10,84 +10,74 @@ import icon1 from './../../images/icon1.png';
 import icon2 from './../../images/icon2.png';
 import icon3 from './../../images/icon3.png';
 import icon4 from './../../images/icon4.png';
+
 const contentList = [
   {
     image: childImg,
     icon: icon1,
     title: "The Seed: Planted in the Directory",
-    price: "",
-    text: `The entry-level tier designed for businesses looking to establish their presence and gain early access to Project Black’s growing network.
+    price: "$50 (Limited Time) / Annum",
+    text: `Your First Step Into the Ecosystem
+The Seed is  how you claim your place in the culture.
+Whether you’re a brand, creative, or supporter, this entry-level listing gives you visibility, access, and community.
 
-<b>Benefits:</b>
-• Business listing in the Directory on GoProjectBlack.com
-• Exposure to an engaged audience and exclusive early access opportunities
-• Social media highlights to drive traffic to your business
-• Recognition in the Founders Circle as an early supporter
+Benefits:
+• Verified spot in the ProjectBlack Directory (The Black Book) 
+• Exposure to a culture-driven audience
+• Early supporter recognition (Digital badge for social media)
+• Member-only updates, events and opportunities
 
-<b>Welcome package:</b> The Trailblazer Innovator Edition
-
-<b>Early Bird Rate:</b> $50 (50% off, will increase to $100 after launch)`
+Black Box: WELCOME TO EXCELLENCE – The Seed 
+`
   },
   {
     image: manImg,
     icon: icon2,
     title: "Growth Phase",
-    price: "",
-    text: `Designed for business owners looking for a competitive edge and deeper engagement within Project Black.
+    price: "$50 (Limited Time) / Annum",
+    text: `Designed for growing businesses, creators, and professionals ready to scale, The Pillar unlocks premium access to Project Black’s tools and opportunities.
 
-<b>Benefits:</b>
-• All Trailblazer perks included
-• Early access to platform launches and events
-• Exclusive discounts with partner brands
-• Founders Circle recognition with permanent listing
-• Private networking with Black 100 members
-• Priority spotlights for your business on the platform
+Benefits:
+• All Seed perks included
+• Featured promotion across Project Black’s media & newsletters
+• Discounts on Project Black University courses & workshops
+• Priority directory placement
 
-<b>Welcome package:</b> The Black Box Innovator Edition
-
-<b>Pay-in-Full Bonus:</b>
-One additional social media feature (extra promotion across Project Black's platforms)`
+Black Box: WELCOME TO EXCELLENCE – The Seed
+  `
   },
   {
     image: womanImg,
     icon: icon3,
     title: "Established Root",
-    price: "",
-    text: `For entrepreneurs scaling up and ready to lead the culture.
+    price: "$50 (Limited Time) / Annum",
+    text: `The Flame is built for innovators, thought leaders, and culture shapers who want to amplify their presence, launch initiatives, and receive exclusive Project Black perks.
 
-<b>Benefits:</b>
-• All Pillar perks included
-• VIP platform + directory feature
-• Business spotlight & media exposure
-• Speaking/interview opportunities
-• Priority brand/investor intros
-…and more
+Benefits:
+	•	All Pillar perks included
+	•	Exclusive invites to roundtables, digital showcases, and co-branded opportunities
+	•	Discounted content creation packages and business makeovers
+	•	Strategic promotion across Project Black platforms
 
-<b>Extras:</b>
-Business Makeover Package
-• Feature write-up & promo reel
-• IG highlight & social media boost
-
-<b>Welcome Package:</b>
-The Black Box — Flame Edition`
+Black Box: WELCOME TO EXCELLENCE – The Flame
+ `
   },
   {
     image: crownImg,
     icon: icon4,
     title: "Harvesting Change",
-    price: "",
-    text: `The entry-level tier designed for businesses looking to establish their presence and gain early access to Project Black's growing network.
+    price: "$50 (Limited Time) / Annum",
+    text: `Invite-only or application-based, The Crown is for serious investors, changemakers, and top-tier leaders committed to investing in the future of Black (Invite Only)
+Benefits:
+• All Flame perks included
+• Direct influence in Project Black's future (voting, advisory, partnerships)
+• Premium VIP access to travel, dining, and elite experiences
+• Custom badge + Letterman jacket
+• Exclusive access to The Black Card legacy tier
 
-<b>Benefits:</b>
-• Business listing in the Directory on GoProjectBlack.com
-• Exposure to an engaged audience and exclusive early access opportunities
-• Social media highlights to drive traffic to your business
-• Recognition in the Founders Circle as an early supporter
-
-<b>Welcome package:</b> The Trailblazer Innovator Edition
-
-<b>Early Bird Rate:</b> $50 (50% off, will increase to $100 after launch)`
-  }
+Black Box: WELCOME TO EXCELLENCE – The Crown
+ `
+  },
 ];
 
 const Tabdirectory = () => {

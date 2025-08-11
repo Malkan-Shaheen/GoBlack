@@ -52,6 +52,10 @@
   width: 90%;
   pointer-events: auto;
 }
+.scroll-text p {
+   margin-top: 30px;
+  }
+
 @media screen and (max-width: 768px) {
   .scroll-section {
     height: 180vh; /* Reduced height for mobile */
@@ -93,6 +97,7 @@
 
   .scroll-text p {
     font-size: 0.9rem;
+   /* margin-top: 30px; */
   }
 }
 
