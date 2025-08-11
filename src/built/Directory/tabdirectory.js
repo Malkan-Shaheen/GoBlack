@@ -23,14 +23,14 @@ The Seed is  how you claim your place in the culture.
 
 Whether you’re a brand, creative, or supporter, this entry-level listing gives you visibility, access, and community.
 
-Benefits: 
+<strong>Benefits</strong>: 
 
 • Verified spot in the ProjectBlack Directory (The Black Book) 
 • Exposure to a culture-driven audience
 • Early supporter recognition (Digital badge for social media)
 • Member-only updates, events and opportunities
 
-Black Box: WELCOME TO EXCELLENCE – The Seed 
+<strong>Black Box:</strong> WELCOME TO EXCELLENCE – The Seed 
  `
   },
   {
@@ -41,14 +41,14 @@ Black Box: WELCOME TO EXCELLENCE – The Seed
     text: `
  Designed for growing businesses, creators, and professionals ready to scale, The Pillar unlocks premium access to Project Black’s tools and opportunities.
 
-Benefits:
+<strong>Benefits:</strong>
 
 • All Seed perks included
 • Featured promotion across Project Black’s media & newsletters
 • Discounts on Project Black University courses & workshops
 • Priority directory placement
 
-Black Box: WELCOME TO EXCELLENCE – The Pillar
+<strong>Black Box:</strong> WELCOME TO EXCELLENCE – The Pillar
   `
   },
   {
@@ -58,14 +58,14 @@ Black Box: WELCOME TO EXCELLENCE – The Pillar
     price: "$50 (Limited Time) / Annum",
     text: `The Flame is built for innovators, thought leaders, and culture shapers who want to amplify their presence, launch initiatives, and receive exclusive Project Black perks.
 
-Benefits:
+<strong>Benefits:</strong>
 
   •	All Pillar perks included
   •	Exclusive invites to roundtables, digital showcases, and co-branded opportunities
   •	Discounted content creation packages and business makeovers
   •	Strategic promotion across Project Black platforms
 
-Black Box: WELCOME TO EXCELLENCE – The Flame
+<strong>Black Box:</strong> WELCOME TO EXCELLENCE – The Flame
  `
   },
   {
@@ -75,7 +75,7 @@ Black Box: WELCOME TO EXCELLENCE – The Flame
     price: "$50 (Limited Time) / Annum",
     text: `Invite-only or application-based, The Crown is for serious investors, changemakers, and top-tier leaders committed to investing in the future of Black (Invite Only)
 
-Benefits:
+<strong>Benefits:</strong>
 
  • All Flame perks included
  • Direct influence in Project Black's future (voting, advisory, partnerships)
@@ -83,7 +83,7 @@ Benefits:
  • Custom badge + Letterman jacket
  • Exclusive access to The Black Card legacy tier
 
-Black Box: WELCOME TO EXCELLENCE – The Crown
+<strong>Black Box:</strong> WELCOME TO EXCELLENCE – The Crown
  `
   },
 ];
