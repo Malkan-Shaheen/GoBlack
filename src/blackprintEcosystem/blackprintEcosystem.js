@@ -22,7 +22,7 @@ const cards = [
     title: 'Black Marketplace',
     img: card7,
     hoverImg: hc7,
-    text: ' Your destination for discovering and shopping Black-owned brands in beauty, books, food, fashion, and more. This is where culture spends with purpose and keeps the dollar in the community',
+    text: ' Your destination for discovering and shopping Black owned brands in beauty, books, food, fashion, and more. This is where culture spends with purpose and keeps the dollar in the community',
   },
 
 
@@ -30,7 +30,7 @@ const cards = [
     title: 'The Black Card',
     img: card2,
     hoverImg: hc2,
-    text: 'A premium membership unlocking partner discounts, exclusive events, networking tools, and the first-of-its-kind cultural rewards program. For the culture. Elevate it.',
+    text: 'A premium membership unlocking partner discounts, exclusive events, networking tools, and the first of its kind cultural rewards program. For the culture. Elevate it.',
   },
     {
     title: 'The Directory',
@@ -38,7 +38,7 @@ const cards = [
     hoverImg: hc1,
      text: (
       <>
-        Also known as <strong>The Black Book</strong> This curated digital guide connects you to the next wave of Black-owned brands across beauty, business, wellness, tech, and more. Search by category, location, or identity, and discover the culture’s best.
+        Also known as <strong>The Black Book</strong> This curated digital guide connects you to the next wave of Black owned brands across beauty, business, wellness, tech, and more. Search by category, location, or identity, and discover the culture’s best.
       </>
     ),
   },
@@ -58,13 +58,13 @@ const cards = [
     title: 'Media Hub',
     img: card5,
     hoverImg: hc5,
-    text: 'The heartbeat of our ecosystem, highlighting stories, wins, and culture from across our network. Your go-to space for seeing how creativity meets impact — and how we make it work for us, by us',
+    text: 'The heartbeat of our ecosystem, highlighting stories, wins, and culture from across our network. Your go to space for seeing how creativity meets impact  and how we make it work for us, by us',
   },
   {
     title: 'Education & Empowerment',
     img: card6,
     hoverImg: hc6,
-    text: 'Virtual and in-person classes, resources, and connections to help you launch, grow, and scale. Whether you’re looking to invest, hire, or build, we’ll guide you from idea to excellence.',
+    text: 'Virtual and in person classes, resources, and connections to help you launch, grow, and scale. Whether you’re looking to invest, hire, or build, we’ll guide you from idea to excellence.',
   },
  
 ];
