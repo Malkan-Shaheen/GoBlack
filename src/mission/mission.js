@@ -59,9 +59,9 @@ export default function Mission() {
         <div className="merch-text-wrapper">
           <h2>Wear The Mission. Fuel The Movement</h2>
           <p>
-            This isn't just merch — it's a message. Every hoodie, journal, and tee
+            This isn't just merch , it's a message. Every hoodie, journal, and tee
             supports the legacy we're building together.<br />
-            The Leniage8185 brand is where culture meets purpose.
+            The Lineage 1865 brand is where culture meets purpose.
           </p>
           <span><em>Shop With Meaning. Invest In The Movement</em></span>
         </div>

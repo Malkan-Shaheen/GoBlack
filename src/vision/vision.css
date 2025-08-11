@@ -176,7 +176,7 @@
 .line-bottom-left {
   top: 295px;
   left: 60px; /* Changed from -4.5px to 0px */
-  height: 155px;
+  height: 115px;
 }
 .empower-text {
   padding-left: 16px; /* Optional: creates room between line and text */

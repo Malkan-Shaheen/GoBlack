@@ -18,48 +18,55 @@ import hc6 from './../images/hc6.png';
 import hc7 from './../images/hc7.png';
 
 const cards = [
-  {
-    title: 'The Directory',
-    img: card1,
-    hoverImg: hc1,
-    text: 'A curated digital guide connecting the next wave of Black-owned brands across beauty, business, wellness, tech + more. Search by category, location, or identity and discover The Culture\'s Best.',
+   {
+    title: 'Black Marketplace',
+    img: card7,
+    hoverImg: hc7,
+    text: ' Your destination for discovering and shopping Black-owned brands in beauty, books, food, fashion, and more. This is where culture spends with purpose and keeps the dollar in the community',
   },
+
+
   {
     title: 'The Black Card',
     img: card2,
     hoverImg: hc2,
-    text: 'A premium membership unlocking exclusive access to partner discounts, events, & networking tools, as well as a first-of-its-kind cultural impact rewards program. All for The Culture. Elevate it.',
+    text: 'A premium membership unlocking partner discounts, exclusive events, networking tools, and the first-of-its-kind cultural rewards program. For the culture. Elevate it.',
+  },
+    {
+    title: 'The Directory',
+    img: card1,
+    hoverImg: hc1,
+     text: (
+      <>
+        Also known as <strong>The Black Book</strong> This curated digital guide connects you to the next wave of Black-owned brands across beauty, business, wellness, tech, and more. Search by category, location, or identity, and discover the culture’s best.
+      </>
+    ),
   },
   {
     title: 'The Black 100',
     img: card3,
     hoverImg: hc3,
-    text: 'Our inaugural list of 100 Creators, Makers, Healers, and Builders changing the game across industries. Stay tuned for your chance to nominate leaders in your life doing the work and making it count.',
+    text: 'The Founding Circle honoring 100 innovators, builders, and changemakers shaping the future. Soon, you’ll be able to nominate leaders in your life whose work deserves the spotlight.',
   },
   {
     title: 'Events Calendar',
     img: card4,
     hoverImg: hc4,
-    text: 'A live, shoppable calendar spotlighting curated Black-owned experiences happening around the country. Don’t miss what’s happening, near or far.',
+    text: 'A live, shoppable calendar spotlighting curated Black owned experiences happening around the country. Don’t miss what’s happening, near or far.',
   },
   {
     title: 'Media Hub',
     img: card5,
     hoverImg: hc5,
-    text: 'Highlighting stories, wins, and culture from across our ecosystem. Your go-to destination to see how others are building and making it work for us, by us.',
+    text: 'The heartbeat of our ecosystem, highlighting stories, wins, and culture from across our network. Your go-to space for seeing how creativity meets impact — and how we make it work for us, by us',
   },
   {
     title: 'Education & Empowerment',
     img: card6,
     hoverImg: hc6,
-    text: 'Virtual and in-person classes + resources to help you launch and scale your ideas. Whether you’re looking to invest, hire, build or grow — we’re here to get you from point A to point Brilliant.',
+    text: 'Virtual and in-person classes, resources, and connections to help you launch, grow, and scale. Whether you’re looking to invest, hire, or build, we’ll guide you from idea to excellence.',
   },
-  {
-    title: 'Black Marketplace',
-    img: card7,
-    hoverImg: hc7,
-    text: 'Your one-stop-shop for discovering and shopping Black-owned brands — from beauty to books to food to fashion. This is where Culture spends with intention.',
-  },
+ 
 ];
 export default function BlackprintEcosystem() {
   return (
