@@ -685,18 +685,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
     padding: 0 5px;
   }
 
-  .flipUnitContainer {
-    width: clamp(40px, 24vw, 52px);
-    height: 48px;
-  }
-
-  .upperCard span,
-  .lowerCard span,
-  .flipCard span {
-    font-size: 30px;
-    letter-spacing: -1px;
-  }
-
+  
   .unitLabel {
     font-size: 9px;
     margin-top: 3px;
@@ -876,13 +865,18 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
 /* === 768px and below === */
 @media (max-width: 768px) {
-  .hero-container {
+   .hero-container {
     background-image: url('/src/images/hero-bg2.png') !important;
-    background-size: cover !important; /* Keep proportions */
-    background-position: center center !important;
+    background-size: 100% auto !important; /* Full width, auto height */
+    background-position: top center !important;
     background-repeat: no-repeat !important;
-    height: auto !important; /* Let height fit content */
-    min-height: 100vh; /* Still fills viewport */
+    
+    /* Aspect ratio trick: adjust % to match your image's ratio */
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* For 16:9 image — change this to match your image ratio */
+    height: auto !important;
+    min-height: unset !important;
   }
 
   
@@ -904,73 +898,233 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 }
 
 /* === 480px and below === */
-@media (max-width: 480px) {
-  
-
-  .description {
-    font-size: 0.85rem !important;
+@media (max-width: 680px) {
+  .heading{
+    margin-top: -150px !important;
+    position: relative !important ;
+    /* top: -300 !important; */
   }
 
-  .flipClock {
-    gap: 8px !important;
+}
+@media (max-width: 580px) {
+  .heading{
+    font-size: 42px !important;
+    /* top: -300 !important; */
   }
+  .img-frame {
+    width: 80% !important;
+    bottom: 50px !important;
+  } 
 
-  .flipUnitContainer {
-    width: clamp(45px, 24vw, 60px) !important;
-    height: 54px !important;
-  }
-
-  .upperCard span,
-  .lowerCard span,
-  .flipCard span {
-    font-size: 32px !important;
-  }
 }
 
-/* === 375px and below === */
 @media (max-width: 375px) {
-  
-
-  .description {
-    font-size: 0.8rem !important;
+  .heading{
+    font-size: 20px !important;
+    margin-top: -200px !important ;
+    /* top: -300 !important; */
   }
-
-  .flipClock {
-    gap: 6px !important;
+  .img-frame {
+    width: 70% !important;
+    bottom: 90px !important;
+  } 
+  .subtitle{
+    font-size: 10px !important;
+    margin-top: -65px !important;
+  }
+.description{
+  font-size: 8px !important;
+}
+.cta-button{
+  font-size: 8px !important;
+  padding: 5px 10px !important;
+  margin-top: 0px !important;
+}
+.coming-soon{
+  font-size: 8px !important;
+  margin-top: 15px !important;
+}
+.countdown-wrapper{
+  margin-top: 0px !important;
+  position: relative !important;
+}
+.flipClock {
+    gap: 2px; /* even smaller gap */
+    padding: 0 10px;
+    flex-wrap: nowrap; /* force single row */
+    overflow-x: auto; /* allow scroll if still too big */
   }
 
   .flipUnitContainer {
-    width: clamp(40px, 24vw, 52px) !important;
-    height: 48px !important;
+    width: 28px !important; /* smaller width */
+    height: 18px !important; /* smaller height */
+    min-width: 14px !important;
   }
+  
 
   .upperCard span,
   .lowerCard span,
   .flipCard span {
-    font-size: 28px !important;
+    font-size: 12px !important;
   }
 }
+@media (min-width: 376px) and (max-width: 420px) {
+  .heading{
+    font-size: 28px !important;
+    margin-top: -200px !important ;
+    /* top: -300 !important; */
+  }
+  .img-frame {
+    width: 80% !important;
+    bottom: 100px !important;
+  } 
+  .subtitle{
+    font-size: 14px !important;
+    margin-top: -65px !important;
+  }
+.description{
+  font-size: 12px !important;
+}
+.cta-button{
+  font-size: 10px !important;
+  padding: 5px 10px !important;
+  margin-top: 5px !important;
+}
+.coming-soon{
+  font-size: 10px !important;
+  margin-top: 15px !important;
+}
+.countdown-wrapper{
+  margin-top: 0px !important;
+  position: relative !important;
+}
+.flipClock {
+    gap: 2px; /* even smaller gap */
+    padding: 0 10px;
+    flex-wrap: nowrap; /* force single row */
+    overflow-x: auto; /* allow scroll if still too big */
+  }
+
+  .flipUnitContainer {
+    width: 32px !important; /* smaller width */
+    height: 24px !important; /* smaller height */
+    min-width: 18px !important;
+  }
+  
+
+  .upperCard span,
+  .lowerCard span,
+  .flipCard span {
+    font-size: 14px !important;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 500px) {
+  .heading{
+    font-size: 32px !important;
+    margin-top: -240px !important ;
+    /* top: -300 !important; */
+  }
+  .img-frame {
+    width: 80% !important;
+    bottom: 100px !important;
+  } 
+  .subtitle{
+    font-size: 15px !important;
+    margin-top: -65px !important;
+  }
+.description{
+  font-size: 14px !important;
+}
+.cta-button{
+  font-size: 14px !important;
+  padding: 5px 10px !important;
+  margin-top: 10px !important;
+}
+.coming-soon{
+  font-size: 14px !important;
+  margin-top: 15px !important;
+}
+.countdown-wrapper{
+  margin-top: 0px !important;
+  position: relative !important;
+}
+.flipClock {
+    gap: 3px; /* even smaller gap */
+    padding: 0 10px;
+    flex-wrap: nowrap; /* force single row */
+    overflow-x: auto; /* allow scroll if still too big */
+  }
+
+  .flipUnitContainer {
+    width: 36px !important; /* smaller width */
+    height: 30px !important; /* smaller height */
+    min-width: 22px !important;
+  }
+  
+
+  .upperCard span,
+  .lowerCard span,
+  .flipCard span {
+    font-size: 18px !important;
+  }
+}
+
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .heading{
+    font-size: 34px !important;
+    margin-top: -260px !important ;
+    /* top: -300 !important; */
+  }
+  .img-frame {
+    width: 90% !important;
+    bottom: 110px !important;
+  } 
+  .subtitle{
+    font-size: 18px !important;
+    margin-top: -65px !important;
+  }
+.description{
+  font-size: 16px !important;
+}
+.cta-button{
+  font-size: 14px !important;
+  padding: 5px 10px !important;
+  margin-top: 10px !important;
+}
+.coming-soon{
+  font-size: 14px !important;
+  margin-top: 15px !important;
+}
+.countdown-wrapper{
+  margin-top: 0px !important;
+  position: relative !important;
+}
+.flipClock {
+    gap: 3px; /* even smaller gap */
+    padding: 0 10px;
+    flex-wrap: nowrap; /* force single row */
+    overflow-x: auto; /* allow scroll if still too big */
+  }
+
+  .flipUnitContainer {
+    width: 38px !important; /* smaller width */
+    height: 34px !important; /* smaller height */
+    min-width: 22px !important;
+  }
+  
+
+  .upperCard span,
+  .lowerCard span,
+  .flipCard span {
+    font-size: 22px !important;
+  }
+}
+
+
+
+
+
 
 /* === 320px and below === */
-@media (max-width: 320px) {
-
-
-  .description {
-    font-size: 0.75rem !important;
-  }
-
-  .flipClock {
-    gap: 4px !important;
-  }
-
-  .flipUnitContainer {
-    width: clamp(36px, 22vw, 46px) !important;
-    height: 42px !important;
-  }
-
-  .upperCard span,
-  .lowerCard span,
-  .flipCard span {
-    font-size: 24px !important;
-  }
-}
