@@ -547,12 +547,160 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
   .hero-container {
     background-image: url('/src/images/hero-bg2.png');
-    background-size: 100% 100%;
+    background-size: 100% 100vh;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
     padding: 0;
   }
+  @media (max-width: 320px) {
+  /* Hero container adjustments */
+  .hero-container {
+    height: auto;
+    min-height: 0;
+    background-size: 100% auto;
+    background-position: top center;
+    padding: 20px 0 0 0;
+  }
+
+  /* Font size reductions */
+  .heading {
+    font-size: 20px !important;
+    letter-spacing: 2px !important;
+    margin-top: 10px !important;
+  }
+
+  .subtitle {
+    font-size: 0.6rem !important;
+    letter-spacing: 0.3em !important;
+    margin-top: 5px !important;
+  }
+
+  .description {
+    font-size: 0.55rem !important;
+    margin-top: 5px !important;
+    padding: 0 5px !important;
+  }
+
+  /* Timer scaling */
+  .flipClock {
+    gap: 4px;
+    transform: scale(0.85);
+    transform-origin: center;
+    margin: 7px 0 !important;
+  }
+
+  .flipUnitContainer {
+    width: 20px !important;
+    height: 24px !important;
+  }
+
+  .upperCard span,
+  .lowerCard span,
+  .flipCard span {
+    font-size: 18px !important;
+  }
+
+  .unitLabel {
+    font-size: 5px !important;
+    margin-top: 2px !important;
+  }
+.coming-soon{
+  margin:5px !important;
+}
+  .colon {
+    font-size: 0.8rem !important;
+    right: -3px !important;
+    top: 12% !important;
+  }
+
+  /* Button adjustments */
+  .cta-button {
+    font-size: 0.8rem !important;
+    padding: 8px 16px !important;
+    margin-top: 15px !important;
+  }
+
+  /* Image frame adjustments */
+  .img-frame {
+    width: 85% !important;
+    bottom: 5px !important;
+  }
+}
+ @media (min-width:325px) and (max-width: 425px) {
+  /* Hero container adjustments */
+  .hero-container {
+    height: auto;
+    min-height: 0;
+    background-size: 100% auto;
+    background-position: top center;
+    padding: 20px 0 0 0;
+  }
+
+  /* Font size reductions */
+  .heading {
+    font-size: 32px !important;
+    letter-spacing: 2px !important;
+    margin-top: 10px !important;
+  }
+
+  .subtitle {
+    font-size: 0.6rem !important;
+    letter-spacing: 0.3em !important;
+    margin-top: 5px !important;
+  }
+
+  .description {
+    font-size: 0.75rem !important;
+    margin-top: 5px !important;
+    padding: 0 5px !important;
+  }
+
+  /* Timer scaling */
+  .flipClock {
+    gap: 4px;
+    transform: scale(0.85);
+    transform-origin: center;
+    margin: 12px 0 !important;
+  }
+
+  .flipUnitContainer {
+    width: 28px !important;
+    height: 32px !important;
+  }
+
+  .upperCard span,
+  .lowerCard span,
+  .flipCard span {
+    font-size: 18px !important;
+  }
+
+  .unitLabel {
+    font-size: 5px !important;
+    margin-top: 2px !important;
+  }
+.coming-soon{
+  margin:10px !important;
+}
+  .colon {
+    font-size: 0.8rem !important;
+    right: -3px !important;
+    top: 12% !important;
+  }
+
+  /* Button adjustments */
+  .cta-button {
+    font-size: 0.8rem !important;
+    padding: 8px 16px !important;
+    margin-top: 15px !important;
+  }
+
+  /* Image frame adjustments */
+  .img-frame {
+    width: 85% !important;
+    bottom: 5px !important;
+  }
+}
 
   .heading {
     font-size: clamp(28px, 7vw, 48px);

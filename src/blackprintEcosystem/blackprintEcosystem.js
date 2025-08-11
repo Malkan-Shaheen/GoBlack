@@ -22,7 +22,7 @@ const cards = [
     title: 'Black Marketplace',
     img: card7,
     hoverImg: hc7,
-    text: ' Your destination for discovering and shopping Black owned brands in beauty, books, food, fashion, and more. This is where culture spends with purpose and keeps the dollar in the community',
+    text: ' Your destination for discovering and shopping Black owned brands in beauty, books, food, fashion, and more. This is where culture spends with purpose and keeps the dollar in the community.',
   },
 
 
@@ -58,7 +58,7 @@ const cards = [
     title: 'Media Hub',
     img: card5,
     hoverImg: hc5,
-    text: 'The heartbeat of our ecosystem, highlighting stories, wins, and culture from across our network. Your go to space for seeing how creativity meets impact  and how we make it work for us, by us',
+    text: 'The heartbeat of our ecosystem, highlighting stories, wins, and culture from across our network. Your go to space for seeing how creativity meets impact  and how we make it work for us, by us.',
   },
   {
     title: 'Education & Empowerment',
