@@ -76,7 +76,9 @@ export default function BlackprintEcosystem() {
           <span className="bp-coming">What’s Coming:  </span>
           <span className="bp-blackprint">The Blackprint™</span>
         </h1>
-        <p className="bp-subtitle">Our Ecosystem</p>
+        <p className="bp-subtitle">Our Ecosystem</p><br/>
+          <p className="bp-subtitle">The Blackprint™ is our blueprint for a connected cultural economy</p>
+        
       </div>
       <div className="bp-grid">
         {cards.map((card, index) => (

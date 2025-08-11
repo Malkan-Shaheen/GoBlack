@@ -30,6 +30,10 @@ body {
   right: 150px;
 
 }
+.directory-section p,h2
+{ 
+  padding-left:40px;
+}
 }
 
 

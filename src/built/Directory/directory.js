@@ -40,7 +40,7 @@ The Seed is  how you claim your place in the culture.
 
 Whether you’re a brand, creative, or supporter, this entry-level listing gives you visibility, access, and community.
 
-<b>Benefits<b/>: 
+Benefits: 
 
 • Verified spot in the ProjectBlack Directory (The Black Book) 
 • Exposure to a culture-driven audience
@@ -48,7 +48,7 @@ Whether you’re a brand, creative, or supporter, this entry-level listing gives
 • Member-only updates, events and opportunities
 
 Black Box: WELCOME TO EXCELLENCE – The Seed 
-`
+ `
   },
   {
     image: manImg,
@@ -106,7 +106,6 @@ Black Box: WELCOME TO EXCELLENCE – The Crown
  `
   },
 ];
-
 
 const Directory = () => {
   const sectionRef = useRef(null);
@@ -351,14 +350,27 @@ const Directory = () => {
                   data-panel={`panel${index + 1}`}
                 >
                   <h2>{item.title}</h2>
-                  <p>
-                    {item.text.split('\n').map((line, i) => (
-                      <span key={i}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </p>
+              <p>
+  {item.text.split('\n').map((line, i) => {
+    const trimmed = line.trim();
+    if (trimmed.startsWith("Benefits:") || trimmed.startsWith("Black Box:")) {
+      return (
+        <span key={i}>
+          <strong>{trimmed}</strong>
+          <br />
+        </span>
+      );
+    }
+    return (
+      <span key={i}>
+        {trimmed}
+        <br />
+      </span>
+    );
+  })}
+</p>
+
+
                   <button className="join-btn">Join Now</button>
                 </div>
               ))}

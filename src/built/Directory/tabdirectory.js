@@ -18,46 +18,52 @@ const contentList = [
     title: "The Seed: Planted in the Directory",
     price: "$50 (Limited Time) / Annum",
     text: `Your First Step Into the Ecosystem
+
 The Seed is  how you claim your place in the culture.
+
 Whether you’re a brand, creative, or supporter, this entry-level listing gives you visibility, access, and community.
 
-Benefits:
+Benefits: 
+
 • Verified spot in the ProjectBlack Directory (The Black Book) 
 • Exposure to a culture-driven audience
 • Early supporter recognition (Digital badge for social media)
 • Member-only updates, events and opportunities
 
 Black Box: WELCOME TO EXCELLENCE – The Seed 
-`
+ `
   },
   {
     image: manImg,
     icon: icon2,
-    title: "Growth Phase",
+    title: "The Pillar : Growth Phase",
     price: "$50 (Limited Time) / Annum",
-    text: `Designed for growing businesses, creators, and professionals ready to scale, The Pillar unlocks premium access to Project Black’s tools and opportunities.
+    text: `
+ Designed for growing businesses, creators, and professionals ready to scale, The Pillar unlocks premium access to Project Black’s tools and opportunities.
 
 Benefits:
+
 • All Seed perks included
 • Featured promotion across Project Black’s media & newsletters
 • Discounts on Project Black University courses & workshops
 • Priority directory placement
 
-Black Box: WELCOME TO EXCELLENCE – The Seed
+Black Box: WELCOME TO EXCELLENCE – The Pillar
   `
   },
   {
     image: womanImg,
     icon: icon3,
-    title: "Established Root",
+    title: "The Flame : Established Root",
     price: "$50 (Limited Time) / Annum",
     text: `The Flame is built for innovators, thought leaders, and culture shapers who want to amplify their presence, launch initiatives, and receive exclusive Project Black perks.
 
 Benefits:
-	•	All Pillar perks included
-	•	Exclusive invites to roundtables, digital showcases, and co-branded opportunities
-	•	Discounted content creation packages and business makeovers
-	•	Strategic promotion across Project Black platforms
+
+  •	All Pillar perks included
+  •	Exclusive invites to roundtables, digital showcases, and co-branded opportunities
+  •	Discounted content creation packages and business makeovers
+  •	Strategic promotion across Project Black platforms
 
 Black Box: WELCOME TO EXCELLENCE – The Flame
  `
@@ -65,20 +71,23 @@ Black Box: WELCOME TO EXCELLENCE – The Flame
   {
     image: crownImg,
     icon: icon4,
-    title: "Harvesting Change",
+    title: "The Crown : Harvesting Change",
     price: "$50 (Limited Time) / Annum",
     text: `Invite-only or application-based, The Crown is for serious investors, changemakers, and top-tier leaders committed to investing in the future of Black (Invite Only)
+
 Benefits:
-• All Flame perks included
-• Direct influence in Project Black's future (voting, advisory, partnerships)
-• Premium VIP access to travel, dining, and elite experiences
-• Custom badge + Letterman jacket
-• Exclusive access to The Black Card legacy tier
+
+ • All Flame perks included
+ • Direct influence in Project Black's future (voting, advisory, partnerships)
+ • Premium VIP access to travel, dining, and elite experiences
+ • Custom badge + Letterman jacket
+ • Exclusive access to The Black Card legacy tier
 
 Black Box: WELCOME TO EXCELLENCE – The Crown
  `
   },
 ];
+
 
 const Tabdirectory = () => {
   return (
