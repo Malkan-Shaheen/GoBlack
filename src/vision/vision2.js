@@ -28,7 +28,7 @@ const Vision2 = () => {
 
       <div className={`vision-text ${imagesAnimated ? 'fade-in-text' : ''}`}>
         <p className="empower-desc">
-  Black creators contribute $1.6 trillion to the U.S. economy each year — yet remain underrepresented.
+  <br/>Black creators contribute $1.6 trillion to the U.S. economy each year — yet remain underrepresented.
   Project Black is changing that.<br /><br />
   We unite culture, commerce, and community to shift narratives and multiply opportunity.{" "}
   <strong>Black excellence is the rule, not the exception.</strong>
