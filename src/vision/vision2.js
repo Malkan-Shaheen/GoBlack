@@ -27,14 +27,12 @@ const Vision2 = () => {
       </div>
 
       <div className={`vision-text ${imagesAnimated ? 'fade-in-text' : ''}`}>
-        <p>
-          Despite contributing $1.6 trillion annually to the U.S. economy, Black creators and businesses remain underrepresented. Project Black is here to change that.
-        </p>
-        <p>
-          We’re building a digital platform where culture, commerce, and community unite to shift narratives, multiply opportunity, and make Black excellence the rule—not the exception.
-          <br />
-          Built for us. Backed by us. This is how we redefine the standard—together.
-        </p>
+        <p className="empower-desc">
+  Black creators contribute $1.6 trillion to the U.S. economy each year — yet remain underrepresented.
+  Project Black is changing that.<br /><br />
+  We unite culture, commerce, and community to shift narratives and multiply opportunity.{" "}
+  <strong>Black excellence is the rule, not the exception.</strong>
+</p>
       </div>
     </div>
   );
