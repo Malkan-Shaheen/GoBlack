@@ -76,6 +76,11 @@
     margin-left: 80px; 
     position: relative;
 }
+@media (min-width: 1024px) {
+    .empower-heading h2 {
+        padding-left: 5px !important;
+    }
+}
 
 
 
@@ -99,7 +104,7 @@
   .empower-text {
     max-width: 100%;
     margin-left: 0;      /* Remove the 104px margin on smaller screens */
-    padding: 0 10px;     /* Optional: add horizontal padding for breathing space */
+    padding: 0 0px;     /* Optional: add horizontal padding for breathing space */
   }
 }
 
@@ -118,7 +123,7 @@
 }
 
 .empower-desc {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.06em;
   text-transform: capitalize;
