@@ -15,7 +15,7 @@ const contentList = [
     image: childImg,
     icon: icon1,
     title: "The Seed: Planted in the Directory",
-    price: "$50 (Limited Time) / Annum",
+    price: "",
     text: `The entry-level tier designed for businesses looking to establish their presence and gain early access to Project Black’s growing network.
 
 <b>Benefits:</b>
@@ -32,7 +32,7 @@ const contentList = [
     image: manImg,
     icon: icon2,
     title: "Growth Phase",
-    price: "$50 (Limited Time) / Annum",
+    price: "",
     text: `Designed for business owners looking for a competitive edge and deeper engagement within Project Black.
 
 <b>Benefits:</b>
@@ -52,7 +52,7 @@ One additional social media feature (extra promotion across Project Black's plat
     image: womanImg,
     icon: icon3,
     title: "Established Root",
-    price: "$50 (Limited Time) / Annum",
+    price: "",
     text: `For entrepreneurs scaling up and ready to lead the culture.
 
 <b>Benefits:</b>
@@ -75,7 +75,7 @@ The Black Box — Flame Edition`
     image: crownImg,
     icon: icon4,
     title: "Harvesting Change",
-    price: "$50 (Limited Time) / Annum",
+    price: "",
     text: `The entry-level tier designed for businesses looking to establish their presence and gain early access to Project Black's growing network.
 
 <b>Benefits:</b>
