@@ -885,11 +885,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
     min-height: 100vh; /* Still fills viewport */
   }
 
-  .heading {
-    font-size: clamp(32px, 6vw, 48px) !important;
-    letter-spacing: 4px !important;
-    margin-bottom: 8px !important;
-  }
+  
 
   .description {
     font-size: 0.9rem !important;
@@ -909,10 +905,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
 /* === 480px and below === */
 @media (max-width: 480px) {
-  .heading {
-    font-size: clamp(26px, 5vw, 36px) !important;
-    letter-spacing: 2px !important;
-  }
+  
 
   .description {
     font-size: 0.85rem !important;
@@ -936,10 +929,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
 /* === 375px and below === */
 @media (max-width: 375px) {
-  .heading {
-    font-size: clamp(22px, 4.5vw, 30px) !important;
-    letter-spacing: 1px !important;
-  }
+  
 
   .description {
     font-size: 0.8rem !important;
@@ -963,10 +953,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
 /* === 320px and below === */
 @media (max-width: 320px) {
-  .heading {
-    font-size: 20px !important;
-    letter-spacing: 0.5px !important;
-  }
+
 
   .description {
     font-size: 0.75rem !important;
