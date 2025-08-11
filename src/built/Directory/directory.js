@@ -40,7 +40,7 @@ The Seed is  how you claim your place in the culture.
 
 Whether you’re a brand, creative, or supporter, this entry-level listing gives you visibility, access, and community.
 
-Benefits: 
+<b>Benefits<b/>: 
 
 • Verified spot in the ProjectBlack Directory (The Black Book) 
 • Exposure to a culture-driven audience
