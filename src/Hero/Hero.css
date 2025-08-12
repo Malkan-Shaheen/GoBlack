@@ -554,3 +554,27 @@ body, html {
     margin-top: 4px;
   }
 }
+@media (max-width: 540px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .img-frame {
+    width: 80%;
+    max-width: none;
+    bottom: -10px;
+  }
+  
+}
+@media (min-width:540px) and (max-width: 786px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .img-frame {
+    width: 70%;
+    max-width: none;
+    bottom: -10px;
+  }
+  
+}
