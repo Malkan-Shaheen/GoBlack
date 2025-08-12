@@ -541,18 +541,40 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
 /* ========== MOBILE RESPONSIVENESS (max-width: 768px) ========== */
 @media (max-width: 768px) {
+  .hero-container {
+    position: relative;
+    min-height: 100vh !important; /* Full viewport height */
+    overflow: visible !important;
+}
   .hero-container > *:first-child {
   margin-top: 0 !important;
 }
-
-  .hero-container {
-    background-image: url('/src/images/hero-bg2.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
+.section-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--header-padding-x);
     height: 100vh;
+    margin-bottom :auto !important;
+    padding-bottom: 0px !important;
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    height: 80vh;
+}
+
+ .hero-container {
+    background-image: url('/src/images/hero-bg2.png');
+    background-size: contain; /* ✅ Always show the full image */
+    background-repeat: no-repeat;
+    background-position: center center; /* ✅ Center it vertically and horizontally */
+    height: 100vh; /* ✅ Always match screen height */
     padding: 0;
-  }
+}
+
 
   .heading {
     font-size: clamp(28px, 7vw, 48px);
@@ -1109,8 +1131,8 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
   }
 
   .flipUnitContainer {
-    width: 38px !important; /* smaller width */
-    height: 34px !important; /* smaller height */
+    width: 42px !important; /* smaller width */
+    height: 38px !important; /* smaller height */
     min-width: 22px !important;
   }
   
@@ -1118,7 +1140,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
   .upperCard span,
   .lowerCard span,
   .flipCard span {
-    font-size: 22px !important;
+    font-size: 32px !important;
   }
 }
 
