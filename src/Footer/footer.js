@@ -2,7 +2,9 @@ import React from 'react';
 import './footer.css';
 import logo from './../images/Logoo.png'; // Replace with your actual logo path
 import twitterIcon from './../images/prime_twitter.png'; // or x.png depending on your asset
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="footer">
       {/* Eclipse Blur Effect */}
@@ -17,7 +19,7 @@ const Footer = () => {
           </p>
 
           <div className="footer-links">
-            <button className="footer-link" onClick={() => console.log('Privacy clicked')}>Privacy</button>
+            <button className="footer-link" onClick={() => navigate('/privacy')}>Privacy</button>
             <button className="footer-link" onClick={() => console.log('Terms clicked')}>Terms</button>
             <button className="footer-icon" onClick={() => console.log('Twitter clicked')}>
   <img src={twitterIcon} alt="Twitter" className="footer-icon" />

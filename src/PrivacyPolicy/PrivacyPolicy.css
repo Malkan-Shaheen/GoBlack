@@ -1,0 +1,64 @@
+.privacy-container {
+  background: #191919;
+  color: #fff; /* white text */
+  padding: 40px 20px;
+  min-height: calc(100vh - 160px); /* Adjust for header + footer height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 70px; 
+  border: 7px solid #191919;
+  border-radius: 2px;
+}
+@font-face {
+  font-family: 'LexendDeca';
+  src: url('/public/Lexlox.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.privacy-title {
+    font-family: 'LexendDeca', sans-serif;
+font-weight: 400;
+font-size: 78.25px;
+line-height: 100%;
+letter-spacing: 4px;
+vertical-align: middle;
+text-transform: lowercase;
+
+}
+
+.privacy-content {
+  background-color: #111; /* slightly lighter black */
+  line-height: 1.6;
+  width: 1003.64208984375px;
+  margin-top: 20px;
+min-height: 1315px;
+top: 269px;
+left: 218.18px;
+padding: 20px;
+gap: 10px;
+opacity: 1;
+
+}
+
+.privacy-content p {
+  margin-bottom: 20px;
+  font-family: 'Poppins';
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 156%;
+letter-spacing: 2px;
+text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .privacy-content {
+    padding: 20px;
+  }
+
+  .privacy-title {
+    font-size: 1.5rem;
+  }
+}
