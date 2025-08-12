@@ -1114,12 +1114,22 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
     margin-top: 20px !important;
   }
 }
-@media (min-width: 320px) and (max-width: 361px) {
+@media (min-width: 330px) and (max-width: 361px) {
   .description{
     font-size: 0.45rem !important;
   }
   .cta-button {
             font-size: 0.7rem !important;
+            padding: 6px 14px !important;
+            margin-top: 0px !important;
+        }
+}
+@media (min-width: 320px) and (max-width: 330px) {
+  .description{
+    font-size: 0.40rem !important;
+  }
+  .cta-button {
+            font-size: 0.6rem !important;
             padding: 6px 14px !important;
             margin-top: 0px !important;
         }
