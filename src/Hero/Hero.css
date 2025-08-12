@@ -887,18 +887,39 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
 /* === 768px and below === */
 @media (max-width: 768px) {
-   .hero-container {
+  .hero-container {
     background-image: url('/src/images/hero-bg2.png') !important;
-    background-size: 100% auto !important; /* Full width, auto height */
-    background-position: top center !important;
+    background-size: cover !important; /* Changed from 'contain' to 'cover' */
+    background-position: center center !important;
     background-repeat: no-repeat !important;
-    
-    /* Aspect ratio trick: adjust % to match your image's ratio */
+    height: 100vh !important; /* Ensure full viewport height */
+    min-height: 100vh !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
     position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* For 16:9 image — change this to match your image ratio */
-    height: auto !important;
-    min-height: unset !important;
+  }
+
+  .section-container {
+    height: 100% !important; /* Match container to parent */
+    min-height: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .overlay {
+    height: 100% !important; /* Full height overlay */
+  }
+
+  .content {
+    height: 100% !important;
+    padding: 20px !important; /* Adjust as needed */
+    justify-content: center !important;
+  }
+
+  /* Adjust heading position if needed */
+  .heading-container {
+    margin-top: -20vh !important; /* Adjust this value as needed */
   }
 
   
