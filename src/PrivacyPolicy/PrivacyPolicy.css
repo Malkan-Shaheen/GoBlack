@@ -31,7 +31,7 @@ text-transform: lowercase;
 .privacy-content {
   background-color: #111; /* slightly lighter black */
   line-height: 1.6;
-  width: 1003.64208984375px;
+  /* width: 1003.64208984375px; */
   margin-top: 20px;
 min-height: 500px;
 top: 269px;
@@ -60,5 +60,57 @@ text-transform: capitalize;
 
   .privacy-title {
     font-size: 1.5rem;
+  }
+}
+/* Tablet Portrait */
+@media (max-width: 1024px) {
+  .privacy-container {
+    padding: 30px 20px;
+  }
+  .privacy-title {
+    font-size: clamp(1.8rem, 4.5vw, 60px);
+    letter-spacing: 3px;
+  }
+  .privacy-content {
+    padding: 18px;
+    min-height: auto;
+  }
+}
+
+/* Large Mobile */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 25px 15px;
+    margin-top: 50px;
+  }
+  .privacy-title {
+    font-size: clamp(1.6rem, 5vw, 48px);
+    letter-spacing: 2px;
+  }
+  .privacy-content {
+    padding: 15px;
+  }
+  .privacy-content p {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .privacy-container {
+    padding: 20px 12px;
+    margin-top: 40px;
+  }
+  .privacy-title {
+    font-size: clamp(1.4rem, 6vw, 36px);
+    letter-spacing: 1.2px;
+  }
+  .privacy-content {
+    padding: 12px;
+  }
+  .privacy-content p {
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 }
