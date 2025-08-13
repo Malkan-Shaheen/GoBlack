@@ -2,10 +2,12 @@ import React from 'react';
 import './Hero.css';
 import FlipClock from './CountdownClock';
 import frameHero from './../images/frame-hero.png';
+import Header from './../Header/Header';
 
 const ProjectBlackLanding = () => {
   return (
-    <div className="hero-container">
+    
+    <div className="hero-container"><Header />
       <div className="section-container">
         <div className="overlay" />
         <div className="content">

@@ -49,21 +49,6 @@ body, html {
   overflow: visible;
  /* margin-bottom: 60px; */
 }
-/* .img-frame {
-  
-    position: absolute;
-    bottom: -13px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: auto;
-    width: 18%;
-    min-width: 87%;
-    max-width: 120%;
-    padding: 0;
-    z-index: 4;
-
-} */
-
 .img-frame {
   position: absolute;
   bottom: -35px; /* more spacing */
@@ -78,9 +63,9 @@ body, html {
 
 @media (min-width: 1200px) {
   .img-frame {
-    min-width: 120%; /* Slightly wider than the heading */
-    max-width: 100%; /* Allows more growth on very large screens */
-    bottom: -15px; /* Adjust position for larger heading */
+    min-width: 120%;  
+    max-width: 100%; 
+    bottom: -15px; 
   }
 }
 .subtitle {
@@ -178,6 +163,7 @@ body, html {
   align-items: center;
   margin-top: 50px;
   position: relative;
+  flex-wrap: nowrap;
 }
 .coming-soon {
   font-family: 'Poppins';
@@ -624,7 +610,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 @media (max-width: 375px) {
   .flipClock {
     gap: 6px;
-    flex-wrap: wrap; /* Ensure wrapping */
+    flex-wrap: nowrap; /* Ensure wrapping */
     justify-content: center;
     padding: 0 5px;
   }

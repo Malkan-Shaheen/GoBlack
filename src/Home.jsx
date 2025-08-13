@@ -1,6 +1,5 @@
 // src/Home.js
 import React, { useRef, useEffect, useState } from 'react';
-import Header from './Header/Header';
 import HeroSection from './Hero/Hero';
 import Built from './built/built';
 import NextSection from './blackprintEcosystem/blackprintEcosystem';
@@ -58,7 +57,7 @@ function Home() {
 
   return (
     <div className="app-container">
-      <Header />
+   
       <HeroSection />
       <div ref={builtRef}>
         <Built onScrollComplete={handleScrollComplete} />
