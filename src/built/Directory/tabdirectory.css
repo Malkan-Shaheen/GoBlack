@@ -75,7 +75,21 @@
   margin-bottom: 15px;
 
 }
-
+join-btn1:hover{
+    background: linear-gradient(
+    66.86deg, 
+    #C09742 5.8%, 
+    #AC7729 8.79%, 
+    #CFB159 14.3%, 
+    #AC7729 21.96%, 
+    #AD7A22 29.58%, 
+    #AD7A22 74.27%, 
+    #C09742 94.28%
+  );
+cursor:pointer;
+    color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7); /* subtle drop shadow */
+}
 .price1 {
   font-weight: 700;
   color: #CD9E3C;

@@ -82,6 +82,11 @@
     }
 }
 
+@media (min-width: 360px) and (max-width: 768px) {
+  .empower-desc {
+ font-size: 12px !important;
+  }
+}
 
 
 @media (max-width: 1024px) {
