@@ -2,8 +2,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import logoImg from './../images/Logoo.png';
-
+import { useNavigate } from 'react-router-dom';
 const Header = () => {
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const menuRef = useRef(null);
 
@@ -51,9 +52,10 @@ const Header = () => {
         <div className="header-right" ref={menuRef}>
           {/* Desktop Navigation */}
           <nav className="nav desktop-nav">
-            <button className="nav-link active" onClick={() => console.log('Home clicked')}>Home</button>
-            <button className="nav-link" onClick={() => console.log('BlackPrint clicked')}>The BlackPrint</button>
-            <button className="nav-link" onClick={() => console.log('Contact clicked')}>Contact Us</button>
+            <button className="nav-link active" onClick={() => navigate('/')}>Home</button>
+            <button className="nav-link" onClick={() => navigate('/TheBlackPrint')}>The BlackPrint</button>
+            <button className="nav-link" onClick={() => navigate('/ContactUs')}>Contact Us</button>
+           
           </nav>
           <button className="lineage-button desktop-lineage">
             Lineage 1865 <span className="cart-icon">🛒</span>
