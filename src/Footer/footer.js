@@ -1,7 +1,6 @@
 import React from 'react';
 import './footer.css';
 import logo from './../images/Logoo.png'; // Replace with your actual logo path
-import twitterIcon from './../images/prime_twitter.png'; // or x.png depending on your asset
 import { useNavigate } from 'react-router-dom';
 const Footer = () => {
   const navigate = useNavigate();
