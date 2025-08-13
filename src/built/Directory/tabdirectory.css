@@ -96,8 +96,8 @@ cursor:pointer;
 }
 
 .join-btn1 {
-  background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
-  color: white;
+  background: white;
+  color: black;
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
@@ -151,8 +151,7 @@ cursor:pointer;
 }
 
 .join-btn1 {
-  background: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
-  color: white;
+
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
