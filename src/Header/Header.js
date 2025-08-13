@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import logoImg from './../images/Logoo.png';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 const Header = () => {
   const navigate = useNavigate();
@@ -47,13 +48,14 @@ const Header = () => {
     <header className="custom-header">
       <div className="header-inner">
         <div className="header-left">
-          {/* <a herf="/" className="logo-link" onClick={() => navigate('/')}> */}
-          <img src={logoImg} alt="Logo" className="logo-img" />
-        </div>
+  <Link to="/" className="logo-link" onClick={closeMobileMenu}>
+    <img src={logoImg} alt="Logo" className="logo-img" />
+  </Link>
+</div>
         <div className="header-right" ref={menuRef}>
           {/* Desktop Navigation */}
           <nav className="nav desktop-nav">
-            <button className="nav-link active" onClick={() => navigate('/')}>Home</button>
+            {/* <button className="nav-link active" onClick={() => navigate('/')}>Home</button> */}
             <button className="nav-link" onClick={() => navigate('/TheBlackPrint')}>The BlackPrint</button>
             <button className="nav-link" onClick={() => navigate('/ContactUs')}>Contact Us</button>
            
@@ -82,7 +84,7 @@ const Header = () => {
             <div className="mobile-menu">
               <nav className="nav mobile-nav">
                
-                   <button className="nav-link active" onClick={() => navigate('/')}>Home</button>
+                   {/* <button className="nav-link active" onClick={() => navigate('/')}>Home</button> */}
             <button className="nav-link" onClick={() => navigate('/TheBlackPrint')}>The BlackPrint</button>
             <button className="nav-link" onClick={() => navigate('/ContactUs')}>Contact Us</button>
               </nav>
