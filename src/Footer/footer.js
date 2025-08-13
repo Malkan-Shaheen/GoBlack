@@ -20,10 +20,10 @@ const Footer = () => {
 
           <div className="footer-links">
             <button className="footer-link" onClick={() => navigate('/privacy')}>Privacy</button>
-            <button className="footer-link" onClick={() => console.log('Terms clicked')}>Terms</button>
+            <button className="footer-link" onClick={() => navigate('/terms')}>Terms</button>
             <button className="footer-icon" onClick={() => console.log('Twitter clicked')}>
   <img src={twitterIcon} alt="Twitter" className="footer-icon" />
-</button>
+</button> 
            <button className="footer-icon" onClick={() => window.open('https://facebook.com/groups/1552740565408393/', '_blank')}>
   <i className="fab fa-facebook-f"></i>
 </button>
