@@ -5,6 +5,8 @@ import Home from './Home';
 import PrivacyPolicy from './PrivacyPolicy';
 import Terms from './Terms';
 import TheBlackPrint from './TheBlackPrint';
+import ContactUs from './ContactUs';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/theblackprint" element={<TheBlackPrint />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
       </Routes>
     </Router>
   );
