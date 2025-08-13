@@ -90,24 +90,9 @@ const Header = () => {
                 >
                   Home
                 </button>
-                <button 
-                  className="nav-link" 
-                  onClick={() => {
-                    console.log('BlackPrint clicked');
-                    closeMobileMenu();
-                  }}
-                >
-                  The BlackPrint
-                </button>
-                <button 
-                  className="nav-link" 
-                  onClick={() => {
-                    console.log('Contact clicked');
-                    closeMobileMenu();
-                  }}
-                >
-                  Contact Us
-                </button>
+                   <button className="nav-link active" onClick={() => navigate('/')}>Home</button>
+            <button className="nav-link" onClick={() => navigate('/TheBlackPrint')}>The BlackPrint</button>
+            <button className="nav-link" onClick={() => navigate('/ContactUs')}>Contact Us</button>
               </nav>
               <button 
                 className="lineage-button mobile-lineage"
