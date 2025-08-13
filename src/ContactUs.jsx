@@ -18,32 +18,42 @@ const ContactUs = () => {
           </p>
 
           <h3 className="contact-heading">The Project Black Network</h3>
-          <div className="contact-info">
-            <p>
-              <span className="icon">📍</span> The Project Black Network<br />
-              6804 Highway 6 S<br />
-              Ste E Unit #521<br />
-              Houston, TX 77083
-            </p>
-            <p>
-              <span className="icon">📧</span> Info@Goprojectblack.Com
-            </p>
-            <p>
-              <span className="icon">📞</span> Lorem Ipsum
-            </p>
-          </div>
+         <div className="contact-info">
+  <p>
+    <span className="icon">
+      <i className="fas fa-map-marker-alt"></i>
+    </span>
+    The Project Black Network
+    6804 Highway 6 S
+    Ste E Unit #521
+    Houston, TX 77083
+  </p>
+  <p>
+    <span className="icon">
+      <i className="fas fa-envelope"></i>
+    </span>
+    Info@Goprojectblack.Com
+  </p>
+  <p>
+    <span className="icon">
+      <i className="fas fa-phone"></i>
+    </span>
+    Lorem Ipsum
+  </p>
+</div>
 
-          {/* <div className="contact-socials">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-linkedin-in"></i></a>
-          </div> */}
+
+          <div className="contact-socials">
+            <a href="https://facebook.com/groups/1552740565408393/"><i className="fab fa-facebook-f"></i></a>
+            {/* <a href="#"><i className="fab fa-twitter"></i></a> */}
+            <a href="https://www.instagram.com/officialprojectblack?igsh=YTNtMjl4NW9hbmcz"><i className="fab fa-instagram"></i></a>
+            {/* <a href="#"><i className="fab fa-linkedin-in"></i></a> */}
+          </div>
         </div>
 
         {/* Right Section */}
         <div className="contact-right">
-          <h2>Let’s Talk Here</h2>
+          <h1>Let’s Talk Here</h1>
           <p>
             Let us know how we can support you. Fill out the form and a member
             of our team will follow up shortly.

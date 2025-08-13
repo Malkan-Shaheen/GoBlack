@@ -6,16 +6,28 @@
   padding: 50px 10%;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: 70px;
 }
 
 .contact-left {
   flex: 1;
   min-width: 300px;
+  margin-top: 45px;
 }
-
+@font-face {
+  font-family: 'LexendDeca';
+  src: url('/public/Lexlox.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .contact-title {
-  font-size: 3rem;
-  font-weight: bold;
+font-family: 'LexendDeca', sans-serif;
+font-weight: 400;
+font-size: 78.25px;
+line-height: 100%;
+letter-spacing: 4px;
+vertical-align: middle;
+text-transform: lowercase;
 }
 
 .contact-title span {
@@ -23,8 +35,14 @@
 }
 
 .contact-description {
-  margin: 20px 0;
-  line-height: 1.6;
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 145%;
+letter-spacing: 2px;
+text-transform: capitalize;
+margin-top: 20px;
 }
 
 .contact-heading {
@@ -33,11 +51,21 @@
 }
 
 .contact-info p {
-  margin: 10px 0;
+  margin: 20px 20px;
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 18px;
+line-height: 35px;
+letter-spacing: 2px;
+text-transform: capitalize;
+padding-right: 130px;
+
 }
 
 .icon {
   margin-right: 10px;
+  font-size: 28.8px;
 }
 
 .contact-socials a {
@@ -50,18 +78,37 @@
 .contact-right {
   flex: 1;
   min-width: 300px;
-  background-color: #111;
+background: #000000;
   padding: 30px;
   border-radius: 5px;
+  position: relative;
+  top:38px;
+  max-height:fit-content;
 }
 
-.contact-right h2 {
-  margin-bottom: 10px;
+.contact-right h1 {
+
+  margin-bottom: 25px;
+  font-family: Poppins;
+font-weight: 700;
+font-style: Bold;
+font-size: 34px;
+line-height: 45px;
+letter-spacing: 2px;
+text-transform: capitalize;
+text-align: left;
+
 }
 
 .contact-right p {
-  font-size: 0.9rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-family: Poppins;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0%;
+
 }
 
 .contact-right input,
@@ -73,6 +120,14 @@
   background-color: #222;
   color: white;
   border-radius: 3px;
+
+  font-family: 'Satoshi';
+font-weight: 400;
+font-style: Regular;
+font-size: 21.43px;
+line-height: 33.34px;
+letter-spacing: 0%;
+
 }
 
 .contact-right textarea {
@@ -87,7 +142,7 @@
   border: none;
   padding: 12px;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 10px;
   cursor: pointer;
 }
 

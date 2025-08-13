@@ -47,8 +47,8 @@ const Header = () => {
     <header className="custom-header">
       <div className="header-inner">
         <div className="header-left">
-          {/* <a herf="/" className="logo-link" onClick={() => navigate('/')}> */}
-          <img src={logoImg} alt="Logo" className="logo-img" />
+          <a herf="/" className="logo-link" onClick={() => navigate('/')}>
+          <img src={logoImg} alt="Logo" className="logo-img" /></a>
         </div>
         <div className="header-right" ref={menuRef}>
           {/* Desktop Navigation */}
