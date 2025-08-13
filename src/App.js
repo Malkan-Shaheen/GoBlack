@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import PrivacyPolicy from './PrivacyPolicy';
 import Terms from './Terms';
+import TheBlackPrint from './TheBlackPrint';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/theblackprint" element={<TheBlackPrint />} />
       </Routes>
     </Router>
   );
