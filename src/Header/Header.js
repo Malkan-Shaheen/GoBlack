@@ -2,7 +2,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import logoImg from './../images/Logoo.png';
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 const Header = () => {
   const navigate = useNavigate();
