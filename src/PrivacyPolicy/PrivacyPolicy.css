@@ -10,6 +10,7 @@
   margin-top: 70px; 
   border: 7px solid #191919;
   border-radius: 2px;
+  
 }
 @font-face {
   font-family: 'LexendDeca';
@@ -40,6 +41,23 @@ padding: 20px;
 gap: 10px;
 opacity: 1;
 
+
+}
+@media (min-width: 768px) {
+  .privacy-content {
+    background-color: #111; /* slightly lighter black */
+  line-height: 1.6;
+  /* width: 1003.64208984375px; */
+  margin-top: 20px;
+min-height: 500px;
+top: 269px;
+left: 218.18px;
+padding: 20px;
+gap: 10px;
+opacity: 1;
+   margin-left: 100px !important;
+margin-right: 100px !important;
+  }
 }
 
 .privacy-content p {
