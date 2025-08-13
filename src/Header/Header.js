@@ -53,7 +53,7 @@ const Header = () => {
         <div className="header-right" ref={menuRef}>
           {/* Desktop Navigation */}
           <nav className="nav desktop-nav">
-            <button className="nav-link active" onClick={() => navigate('/App')}>Home</button>
+            <button className="nav-link active" onClick={() => navigate('/')}>Home</button>
             <button className="nav-link" onClick={() => navigate('/TheBlackPrint')}>The BlackPrint</button>
             <button className="nav-link" onClick={() => navigate('/ContactUs')}>Contact Us</button>
            
