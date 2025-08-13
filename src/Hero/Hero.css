@@ -78,66 +78,11 @@ body, html {
 
 @media (min-width: 1200px) {
   .img-frame {
-  width: 120%; /* Slightly wider than the heading */
-    max-width: 80%; /* Allows more growth on very large screens */
+    min-width: 120%; /* Slightly wider than the heading */
+    max-width: 100%; /* Allows more growth on very large screens */
     bottom: -15px; /* Adjust position for larger heading */
   }
 }
-
-@media (min-width: 1200px) {
-  .img-frame {
-  width: 120%; /* Slightly wider than the heading */
-    max-width: 80%; /* Allows more growth on very large screens */
-    bottom: -15px; /* Adjust position for larger heading */
-  }
-}
-@media (min-width: 1000px) and (max-width: 1024px) {
-  .img-frame {
-    width: 90%;     /* Slightly wider than the heading */
-    max-width: none;  /* Allows more growth without overflowing too far */
-    bottom: -15px;   /* Adjust position for larger heading */
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .img-frame {
-    width: 110%;     /* Slightly wider than the heading */
-    max-width: none;  /* Allows more growth without overflowing too far */
-    bottom: -15px;   /* Adjust position for larger heading */
-  }
-}
-
-@media (min-width: 1000px) and (max-width: 1190px) {
-  .img-frame {
-    width: 90%;     /* Slightly wider than the heading */
-    max-width: none;  /* Allows more growth without overflowing too far */
-    bottom: -15px;   /* Adjust position for larger heading */
-  }
-}
-@media (min-width: 1440px) and (max-width: 2000px) {
-  .img-frame {
-    width: 120%;     /* Slightly wider than the heading */
-    max-width: none;  /* Allows more growth without overflowing too far */
-    bottom: -15px;   /* Adjust position for larger heading */
-  }
-}
-@media (min-width: 2000px)  {
-  .img-frame {
-    width: 125%;     /* Slightly wider than the heading */
-    max-width: none;  /* Allows more growth without overflowing too far */
-    bottom: -15px;   /* Adjust position for larger heading */
-  }
-}
-
-
-@media (min-width: 2560px)  {
-  .img-frame {
-    /* width: 80%;     Slightly wider than the heading */
-    max-width: none;  /* Allows more growth without overflowing too far */
-    bottom: -15px;   /* Adjust position for larger heading */
-  }
-}
-
 .subtitle {
   margin-top: 10px;
   font-size: 0.9rem;
@@ -224,8 +169,7 @@ body, html {
 }
 
 .cta-button:hover {
-  background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
-  color:white;
+  background: #e0e0e0;
 }
 
 .countdown-wrapper {
@@ -249,17 +193,16 @@ body, html {
 
 .flipClock {
   display: flex;
+  justify-content: center; /* Changed to center the clock */
   width: 100%;
   gap: 15px;
   margin: 0 auto; /* Center the clock horizontally */
 
 
+  flex-wrap: nowrap; /* ✅ allows multiple lines on small screens */
+  width: 100%;
   padding: 0 10px; /* Optional */
-  flex-wrap: nowrap !important; /* ⛔ never wrap */
-  white-space: nowrap;          /* keep items together */
-  overflow-x: auto;             /* allow scrolling if it overflows */
-  justify-content: center;      /* keep it centered */
-  gap: 10px;                     /* consistent spacing */
+
 }
 
 .flipUnitContainer {
@@ -548,244 +491,12 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
 
   .hero-container {
     background-image: url('/src/images/hero-bg2.png');
-    background-size: 100% 100vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
     padding: 0;
   }
-
-    .coming-soon{
-      font-size: 10px !important;
-      font-weight: 500 !important;
-      margin-top: -20px !important;
-      padding-top: -20px !important;
-    }
-  
-  @media (max-width: 320px) {
-  /* Hero container adjustments */
-  .hero-container {
-    height: auto;
-    min-height: 0;
-    background-size: 100% auto;
-    background-position: top center;
-    padding: 17px 0 0 0;
-  }
-
-  /* Font size reductions */
-  .heading {
-    font-size: 20px !important;
-    letter-spacing: 2px !important;
-    margin-top: 10px !important;
-  }
-
-  .subtitle {
-    font-size: 0.6rem !important;
-    letter-spacing: 0.3em !important;
-    margin-top: 5px !important;
-  }
-
-  .description {
-    font-size: 0.55rem !important;
-    margin-top: 5px !important;
-    padding: 0 5px !important;
-  }
-
-  /* Timer scaling */
-  .flipClock {
-    gap: 4px;
-    transform: scale(0.85);
-    transform-origin: center;
-    margin: 7px 0 !important;
-  }
-
-  .flipUnitContainer {
-    width: 20px !important;
-    height: 24px !important;
-  }
-
-  .upperCard span,
-  .lowerCard span,
-  .flipCard span {
-    font-size: 18px !important;
-  }
-
-  .unitLabel {
-    font-size: 5px !important;
-    margin-top: 2px !important;
-  }
-.coming-soon{
-  margin:0px !important;
-}
-  .colon {
-    font-size: 0.8rem !important;
-    right: -3px !important;
-    top: 12% !important;
-  }
-
-  /* Button adjustments */
-  .cta-button {
-    font-size: 0.8rem !important;
-    padding: 8px 16px !important;
-    margin-top: 15px !important;
-  }
-
-  /* Image frame adjustments */
-  .img-frame {
-    width: 85% !important;
-    bottom: 5px !important;
-  }
-}
- @media (min-width:322px) and (max-width: 380px) {
-  /* Hero container adjustments */
-  .hero-container {
-    height: auto;
-    min-height: 0;
-    background-size: 100% auto;
-    background-position: top center;
-    padding: 20px 0 0 0;
-  }
-
-  /* Font size reductions */
-  .heading {
-    font-size: 24px !important;
-    letter-spacing: 2px !important;
-    margin-top: 10px !important;
-  }
-
-  .subtitle {
-    font-size: 0.6rem !important;
-    letter-spacing: 0.3em !important;
-    margin-top: 5px !important;
-  }
-
-  .description {
-    font-size: 0.75rem !important;
-    margin-top: 10px !important;
-    padding: 0 5px !important;
-  }
-
-  /* Timer scaling */
-  .flipClock {
-    gap: 4px;
-    transform: scale(0.85);
-    transform-origin: center;
-    margin: 12px 0 !important;
-  }
-
-  .flipUnitContainer {
-    width: 28px !important;
-    height: 32px !important;
-  }
-
-  .upperCard span,
-  .lowerCard span,
-  .flipCard span {
-    font-size: 18px !important;
-  }
-
-  .unitLabel {
-    font-size: 5px !important;
-    margin-top: 2px !important;
-  }
-.coming-soon{
-  margin: 0px !important;
-}
-  .colon {
-    font-size: 0.8rem !important;
-    right: -3px !important;
-    top: 12% !important;
-  }
-
-  /* Button adjustments */
-  .cta-button {
-    font-size: 0.8rem !important;
-    padding: 8px 16px !important;
-    margin-top: 15px !important;
-  }
-
-  /* Image frame adjustments */
-  .img-frame {
-    width: 85% !important;
-    bottom: 5px !important;
-  }
-}
-
- @media (min-width:380px) and (max-width: 425px) {
-  /* Hero container adjustments */
-  .hero-container {
-    height: auto;
-    min-height: 0;
-    background-size: 100% auto;
-    background-position: top center;
-    padding: 20px 0 0 0;
-  }
-
-  /* Font size reductions */
-  .heading {
-    font-size: 38px !important;
-    letter-spacing: 2px !important;
-    margin-top: 20px !important;
-  }
-
-  .subtitle {
-    font-size: 0.6rem !important;
-    letter-spacing: 0.3em !important;
-    margin-top: 10px !important;
-  }
-
-  .description {
-    font-size: 0.75rem !important;
-    margin-top: 30px !important;
-    padding: 0 5px !important;
-  }
-
-  /* Timer scaling */
-  .flipClock {
-    gap: 4px;
-    transform: scale(0.85);
-    transform-origin: center;
-    margin: 12px 0 !important;
-  }
-
-  .flipUnitContainer {
-    width: 28px !important;
-    height: 32px !important;
-  }
-
-  .upperCard span,
-  .lowerCard span,
-  .flipCard span {
-    font-size: 18px !important;
-  }
-
-  .unitLabel {
-    font-size: 5px !important;
-    margin-top: 2px !important;
-  }
-.coming-soon{
-  margin:0px !important;
-
-}
-  .colon {
-    font-size: 0.8rem !important;
-    right: -3px !important;
-    top: 12% !important;
-  }
-
-  /* Button adjustments */
-  .cta-button {
-    font-size: 0.8rem !important;
-    padding: 8px 16px !important;
-    margin-top: 15px !important;
-  }
-
-  /* Image frame adjustments */
-  .img-frame {
-    width: 85% !important;
-    bottom: 5px !important;
-  }
-}
 
   .heading {
     font-size: clamp(28px, 7vw, 48px);
@@ -830,7 +541,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
   .cta-button {
     font-size: 0.9rem;
     padding: 10px 20px;
-    margin-top: 0px !important;
+    margin-top: 20px !important;
     width: auto; /* ✅ fit text */
     display: inline-block;
     max-width: 100%;
@@ -1104,43 +815,4 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
     display: flex !important;
     font-size: 28px !important; /* smaller than 40px */
   }
-}
-
-@media (min-width: 380px) and (max-width: 392px) {
-  .heading{
-
-    font-size: 30px !important;
-    letter-spacing: 2px !important;
-    margin-top: 20px !important;
-  }
-}
-@media (min-width: 330px) and (max-width: 361px) {
-  .description{
-    font-size: 0.45rem !important;
-  }
-  .cta-button {
-            font-size: 0.7rem !important;
-            padding: 6px 14px !important;
-            margin-top: 0px !important;
-        }
-}
-@media (min-width: 320px) and (max-width: 330px) {
-  .description{
-    font-size: 0.40rem !important;
-  }
-  .cta-button {
-            font-size: 0.6rem !important;
-            padding: 6px 14px !important;
-            margin-top: 0px !important;
-        }
-}
-@media (min-width: 380px) and (max-width: 384px) {
-  .description{
-    font-size: 0.45rem !important;
-  }
-  .cta-button {
-            font-size: 0.7rem !important;
-            padding: 6px 14px !important;
-            margin-top: 0px !important;
-        }
 }

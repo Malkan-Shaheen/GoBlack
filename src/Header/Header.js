@@ -81,15 +81,7 @@ const Header = () => {
           {isMobileMenuOpen && (
             <div className="mobile-menu">
               <nav className="nav mobile-nav">
-                <button 
-                  className="nav-link active" 
-                  onClick={() => {
-                    console.log('Home clicked');
-                    closeMobileMenu();
-                  }}
-                >
-                  Home
-                </button>
+               
                    <button className="nav-link active" onClick={() => navigate('/')}>Home</button>
             <button className="nav-link" onClick={() => navigate('/TheBlackPrint')}>The BlackPrint</button>
             <button className="nav-link" onClick={() => navigate('/ContactUs')}>Contact Us</button>
