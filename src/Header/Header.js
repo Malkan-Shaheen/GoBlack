@@ -82,7 +82,7 @@ const Header = () => {
             <div className="mobile-menu">
               <nav className="nav mobile-nav">
                
-                   <button className="nav-link active" onClick={() => navigate('/App')}>Home</button>
+                   <button className="nav-link active" onClick={() => navigate('/')}>Home</button>
             <button className="nav-link" onClick={() => navigate('/TheBlackPrint')}>The BlackPrint</button>
             <button className="nav-link" onClick={() => navigate('/ContactUs')}>Contact Us</button>
               </nav>
