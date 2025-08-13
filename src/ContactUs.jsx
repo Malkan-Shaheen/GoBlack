@@ -33,12 +33,12 @@ const ContactUs = () => {
             </p>
           </div>
 
-          <div className="contact-socials">
+          {/* <div className="contact-socials">
             <a href="#"><i className="fab fa-facebook-f"></i></a>
             <a href="#"><i className="fab fa-twitter"></i></a>
             <a href="#"><i className="fab fa-instagram"></i></a>
             <a href="#"><i className="fab fa-linkedin-in"></i></a>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Section */}
