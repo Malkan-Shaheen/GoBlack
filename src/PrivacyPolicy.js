@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "../Header/Header"; 
-import Footer from "../Footer/footer"; 
-import "./PrivacyPolicy.css";
-import { useNavigate } from "react-router-dom";
+import Header from "./Header/Header"; 
+import Footer from "./Footer/footer"; 
+import ".//PrivacyPolicy/PrivacyPolicy.css";
 const PrivacyPolicy = () => {
   return (
     <>
