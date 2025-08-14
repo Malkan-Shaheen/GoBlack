@@ -7,13 +7,14 @@
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 70px;
+  min-height: 73vh;
   
 }
 
 .contact-left {
   flex: 1;
   min-width: 300px;
-  width: 658px;
+  max-width: 658px;
   margin-top: 45px;
   /* left: 101px;
   position: relative; */
@@ -88,7 +89,7 @@ background: #000000;
   position: relative;
   top:38px;
   max-height:fit-content;
-  width: 529px;
+  max-width: 529px;
 }
 
 .contact-right h1 {
