@@ -217,3 +217,16 @@ letter-spacing: 0%;
     padding: 10px;
   }
 }
+@media (min-width: 2000px) {
+.contact-left{
+  position: relative;
+  left: 320px;
+  margin-top: 130px;
+}  
+.contact-right {
+  position: relative;
+  right: 320px;
+  margin-top: 100px;
+  
+}
+}
