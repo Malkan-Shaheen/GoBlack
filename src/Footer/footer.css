@@ -143,11 +143,12 @@
   .footer-links {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 15px;
     padding: 30px;
     top: -50px;
 
   }
+
 
   .footer-icon {
 
@@ -162,5 +163,15 @@
     bottom: -200px ;
     position: relative;
     padding: 10px;
+  }
+}
+@media (max-width:319px) {
+  .footer-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px !important;
+    padding: 30px;
+    top: -50px;
+
   }
 }
