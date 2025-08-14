@@ -481,7 +481,7 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
-    margin-top: -70px !important;
+    margin-top: -100px !important;
     padding: 0;
   }
   .content{
