@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <>
       <Header />
       <div className="privacy-container">
-        <h1 className="privacy-title">PRIVACY POLICY</h1>
+        <h1 autoFocus className="privacy-title">PRIVACY POLICY</h1>
         <div className="privacy-content">
           <p>
 

@@ -4,6 +4,23 @@ import logo from './../images/Logoo.png'; // Replace with your actual logo path
 import { useNavigate } from 'react-router-dom';
 const Footer = () => {
   const navigate = useNavigate();
+  
+  const handleNavigation = (path) => {
+    // Scroll to top FIRST
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant' // Force immediate jump
+    });
+    
+    // Then navigate
+    navigate(path);
+    
+    // Extra insurance for slow connections
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
+  };
+
   return (
     <footer className="footer">
       {/* Eclipse Blur Effect */}
@@ -18,8 +35,8 @@ const Footer = () => {
           </p>
 
           <div className="footer-links">
-            <button className="footer-link" onClick={() => navigate('/privacy')}>Privacy</button>
-            <button className="footer-link" onClick={() => navigate('/terms')}>Terms</button>
+            <button className="footer-link" onClick={() => handleNavigation('/privacy')}>Privacy</button>
+            <button className="footer-link" onClick={() => handleNavigation('/terms')}>Terms</button>
            <button className="footer-icon" onClick={() => window.open('https://facebook.com/groups/1552740565408393/', '_blank')}>
   <i className="fab fa-facebook-f"></i>
 </button>
