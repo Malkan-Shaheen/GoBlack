@@ -484,6 +484,9 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
     margin-top: -70px !important;
     padding: 0;
   }
+  .section-container {
+    margin-top: 70px !important;
+  }
 
   .heading {
     font-size: clamp(28px, 7vw, 48px);
