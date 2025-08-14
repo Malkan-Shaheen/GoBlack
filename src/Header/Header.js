@@ -46,10 +46,15 @@ const Header = () => {
   return (
     <header className="custom-header">
       <div className="header-inner">
-        <div className="header-left">
-          
-          <img src={logoImg} alt="Logo" className="logo-img" />
-        </div>
+       <div className="header-left">
+  <button
+    className="logo-button"
+    onClick={() => navigate('/')}
+    aria-label="Go to home page"
+  >
+    <img src={logoImg} alt="Logo" className="logo-img" />
+  </button>
+</div>
         <div className="header-right" ref={menuRef}>
           {/* Desktop Navigation */}
           <nav className="nav desktop-nav">
