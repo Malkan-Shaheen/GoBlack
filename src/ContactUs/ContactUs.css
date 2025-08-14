@@ -7,12 +7,16 @@
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 70px;
+  
 }
 
 .contact-left {
   flex: 1;
   min-width: 300px;
+  width: 658px;
   margin-top: 45px;
+  /* left: 101px;
+  position: relative; */
 }
 @font-face {
   font-family: 'LexendDeca';
@@ -77,13 +81,14 @@ padding-right: 130px;
 
 .contact-right {
   flex: 1;
-  min-width: 300px;
+  /* min-width: 300px; */
 background: #000000;
   padding: 30px;
   border-radius: 5px;
   position: relative;
   top:38px;
   max-height:fit-content;
+  width: 529px;
 }
 
 .contact-right h1 {
