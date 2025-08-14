@@ -485,11 +485,11 @@ background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
     padding: 0;
   }
   .content{
-    margin-top: 70px !important;
+    margin-top: 100px !important;
   }
   .overlay{
     position: relative;
-    margin-top: -70px !important;
+    margin-top: -100px !important;
   }
 
   .heading {
