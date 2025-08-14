@@ -10,7 +10,7 @@ const ContactUs = () => {
       <div className="contact-container">
         {/* Left Section */}
         <div className="contact-left">
-          <h1 className="contact-title">CONTACT <span>US</span></h1>
+          <h1 className="contact-title">CONTACT US</h1>
           <p className="contact-description">
             We’d love to hear from you. Whether you’re interested in joining
             the movement, becoming a partner, or just want to connect –
