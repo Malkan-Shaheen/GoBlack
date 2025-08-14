@@ -38,7 +38,7 @@ const ContactUs = () => {
     <span className="icon">
       <i className="fas fa-phone"></i>
     </span>
-    Lorem Ipsum
+    {/* Lorem Ipsum */}
   </p>
 </div>
 
