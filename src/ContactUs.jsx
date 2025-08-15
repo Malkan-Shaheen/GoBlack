@@ -49,7 +49,7 @@ const response = await fetch(apiEndpoint, {
         console.error(data.error);
       }
     } catch (error) {
-      console.error(error);
+      // console.error(error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
