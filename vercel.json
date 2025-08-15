@@ -8,7 +8,7 @@
       }
     },
     {
-      "src": "src/api/contact.js",
+      "src": "api/contact.js",
       "use": "@vercel/node"
     }
   ],
@@ -23,11 +23,11 @@
     },
     {
       "src": "/api/contact",
-      "dest": "/src/api/contact.js"
+      "dest": "/api/contact.js"
     },
     {
       "src": "/api/(.*)",
-      "dest": "/src/api/$1"
+      "dest": "/api/$1"
     }
   ]
 }
