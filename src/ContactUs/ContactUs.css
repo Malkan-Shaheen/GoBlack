@@ -250,6 +250,32 @@ letter-spacing: 0%;
   
 }
 }
+@media (min-width: 1600px) and (max-width: 2400px) {
+.contact-left{
+  position: relative;
+  /* left: 320px; */
+  margin-top: 130px;
+}  
+.contact-right {
+  position: relative;
+  /* right: 320px; */
+  margin-top: 100px;
+  
+}
+}
+@media (min-width: 2000px) and (max-width: 2350px) {
+.contact-left{
+  position: relative;
+  left: 20px !important;
+  margin-top: 130px;
+}  
+.contact-right {
+  position: relative;
+  right: 20px !important;
+  margin-top: 100px;
+  
+}
+}
 @media (min-width: 770px) and (max-width:1270px) {
 .contact-left{
   position: relative;

@@ -20,39 +20,7 @@ const ContactUs = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    try {
-      const response = await fetch("https://formspree.io/f/xbjndqya", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          msg: formData.msg,
-          _subject: "Contact Form Submission",
-          _replyto: formData.email,
-          _to: "info@goprojectblack.com"
-        }),
-      });
-
-      if (response.ok) {
-        setSubmitStatus("success");
-        setFormData({ name: "", email: "", msg: "" });
-      } else {
-        setSubmitStatus("error");
-      }
-    } catch (error) {
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  
 
   return (
     <>
@@ -115,34 +83,49 @@ const ContactUs = () => {
               There was an error submitting your message. Please try again.
             </div>
           )}
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your name"
-              value={formData.name}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email address"
-              value={formData.email}
-              onChange={handleChange}
-              required
-            />
-            <textarea
-              name="msg"
-              placeholder="Message"
-              value={formData.msg}
-              onChange={handleChange}
-              required
-            />
-            <button type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Lock It In"}
-            </button>
-          </form>
+         <form 
+  action="https://formsubmit.co/info@goprojectblack.com" 
+  method="POST"
+  onSubmit={(e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    e.target.submit(); // Native form submission
+  }}
+>
+  {/* Hidden fields for configuration */}
+  <input type="hidden" name="_subject" value="New Contact Submission - Project Black" />
+  <input type="hidden" name="_template" value="basic" />
+  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+  
+  {/* Your existing fields */}
+  <input
+    type="text"
+    name="name"
+    placeholder="Your name"
+    value={formData.name}
+    onChange={handleChange}
+    required
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Email address"
+    value={formData.email}
+    onChange={handleChange}
+    required
+  />
+  <textarea
+    name="message"  // Changed from "msg" to match standard format
+    placeholder="Message"
+    value={formData.msg}
+    onChange={(e) => handleChange({...e, target: {...e.target, name: "message"}})}
+    required
+  />
+  
+  <button type="submit" disabled={isSubmitting}>
+    {isSubmitting ? "Sending..." : "Lock It In"}
+  </button>
+</form>
         </div>
       </div>
       <Footer />
