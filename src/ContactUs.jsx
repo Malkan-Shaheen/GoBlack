@@ -29,7 +29,7 @@ const ContactUs = () => {
       // Change this to your Vercel deployment URL in production
      const apiEndpoint = window.location.hostname === 'localhost' 
   ? 'http://localhost:3000/api/contact'
-  : ' ./src/api/contact';
+  : '/api/contact';
 
 const response = await fetch(apiEndpoint, {
   method: "POST",
