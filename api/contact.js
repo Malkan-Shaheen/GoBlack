@@ -21,15 +21,21 @@ export default async function handler(req, res) {
     });
   }
 
-  try {
-    const formsubmitResponse = await fetch("https://formsubmit.co/ajax/malkanshaheen45@gmail.com", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-      },
-      body: JSON.stringify(req.body),
-    });
+ // In your handler.js, add logging:
+try {
+  console.log("Sending to FormSubmit:", req.body); // Add this line
+  
+  const formsubmitResponse = await fetch("https://formsubmit.co/ajax/malkanshaheen45@gmail.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json",
+    },
+    body: JSON.stringify(req.body),
+  });
+
+  console.log("FormSubmit response status:", formsubmitResponse.status); // Add this
+  console.log("FormSubmit response headers:", formsubmitResponse.headers); // Add this
 
     if (!formsubmitResponse.ok) {
       const errorData = await formsubmitResponse.text();
