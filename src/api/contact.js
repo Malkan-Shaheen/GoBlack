@@ -1,14 +1,28 @@
 export default async function handler(req, res) {
-      res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'POST');
+  // Handle CORS preflight requests
+  if (req.method === 'OPTIONS') {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    return res.status(200).end();
+  }
+
+  // Set CORS headers for all responses
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  
+
+  // Only allow POST requests
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+    res.setHeader('Allow', ['POST']);
+    return res.status(405).json({ 
+      error: 'Method not allowed',
+      allowedMethods: ['POST'] 
+    });
   }
 
   try {
-    const response = await fetch("https://formsubmit.co/ajax/malkanshaheen45@gmail.com", {
+    const formsubmitResponse = await fetch("https://formsubmit.co/ajax/malkanshaheen45@gmail.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -17,15 +31,22 @@ export default async function handler(req, res) {
       body: JSON.stringify(req.body),
     });
 
-    const data = await response.json();
-    
-    if (response.ok) {
-      return res.status(200).json({ success: true });
-    } else {
-      return res.status(400).json({ error: data.message || 'Submission failed' });
+    if (!formsubmitResponse.ok) {
+      const errorData = await formsubmitResponse.text();
+      throw new Error(`FormSubmit error: ${errorData}`);
     }
+
+    const data = await formsubmitResponse.json();
+    return res.status(200).json({ 
+      success: true,
+      data 
+    });
+    
   } catch (error) {
     console.error('Form submission error:', error);
-    return res.status(500).json({ error: 'Internal server error' });
+    return res.status(500).json({ 
+      error: 'Internal server error',
+      details: error.message 
+    });
   }
 }
