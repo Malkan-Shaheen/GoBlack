@@ -7,7 +7,7 @@ const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    msg: ""
+    message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
@@ -20,7 +20,41 @@ const ContactUs = () => {
     }));
   };
 
-  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Change this to your Vercel deployment URL in production
+      const apiEndpoint = process.env.NODE_ENV === 'development' 
+        ? '/api/contact' 
+        : `${window.location.origin}/api/contact`;
+
+      const response = await fetch(apiEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+        console.error(data.error);
+      }
+    } catch (error) {
+      console.error(error);
+      setSubmitStatus("error");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -52,12 +86,6 @@ const ContactUs = () => {
               </span>
               Info@Goprojectblack.Com
             </p>
-            <p>
-              {/* <span className="icon">
-                <i className="fas fa-phone"></i>
-              </span> */}
-              {/* Lorem Ipsum */}
-            </p>
           </div>
 
           <div className="contact-socials">
@@ -83,49 +111,35 @@ const ContactUs = () => {
               There was an error submitting your message. Please try again.
             </div>
           )}
-         <form 
-  action="https://formsubmit.co/info@goprojectblack.com" 
-  method="POST"
-  onSubmit={(e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    e.target.submit(); // Native form submission
-  }}
->
-  {/* Hidden fields for configuration */}
-  <input type="hidden" name="_subject" value="New Contact Submission - Project Black" />
-  <input type="hidden" name="_template" value="basic" />
-  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
-  
-  {/* Your existing fields */}
-  <input
-    type="text"
-    name="name"
-    placeholder="Your name"
-    value={formData.name}
-    onChange={handleChange}
-    required
-  />
-  <input
-    type="email"
-    name="email"
-    placeholder="Email address"
-    value={formData.email}
-    onChange={handleChange}
-    required
-  />
-  <textarea
-    name="message"  // Changed from "msg" to match standard format
-    placeholder="Message"
-    value={formData.msg}
-    onChange={(e) => handleChange({...e, target: {...e.target, name: "message"}})}
-    required
-  />
-  
-  <button type="submit" disabled={isSubmitting}>
-    {isSubmitting ? "Sending..." : "Lock It In"}
-  </button>
-</form>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email address"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+            />
+            
+            <button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? "Sending..." : "Lock It In"}
+            </button>
+          </form>
         </div>
       </div>
       <Footer />
