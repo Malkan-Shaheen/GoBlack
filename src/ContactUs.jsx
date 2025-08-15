@@ -27,17 +27,17 @@ const ContactUs = () => {
 
     try {
       // Change this to your Vercel deployment URL in production
-      const apiEndpoint = process.env.NODE_ENV === 'development' 
-        ? '/api/contact' 
-        : `${window.location.origin}/api/contact`;
+     const apiEndpoint = window.location.hostname === 'localhost' 
+  ? 'http://localhost:3000/api/contact'
+  : '/api/contact';
 
-      const response = await fetch(apiEndpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+const response = await fetch(apiEndpoint, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify(formData),
+});
 
       const data = await response.json();
 

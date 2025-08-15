@@ -6,6 +6,10 @@
       "config": {
         "distDir": "build"
       }
+    },
+    {
+      "src": "src/api/contact.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -16,6 +20,14 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
+    },
+    {
+      "src": "/api/contact",
+      "dest": "/src/api/contact.js"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/api/$1"
     }
   ]
 }
