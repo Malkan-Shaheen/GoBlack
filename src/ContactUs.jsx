@@ -136,7 +136,7 @@ const response = await fetch(apiEndpoint, {
             />
             
             <button type="submit" disabled={isSubmitting}>
-              {isSubmitting ? "Sending..." : "Lock It In"}
+              {isSubmitting ? "Sending..." : "Send"}
             </button>
           </form>
         </div>
