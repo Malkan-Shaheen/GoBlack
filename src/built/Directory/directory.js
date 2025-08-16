@@ -271,7 +271,13 @@ const Directory = () => {
         </p>
       ))}
     </div>
-    <button className="join-btn" onclick="window.location.href='https://discord.gg/sZBU2bSSGN'">Join Now</button>
+
+    <button 
+  className="join-btn" 
+  onClick={() => window.location.href='https://discord.gg/sZBU2bSSGN'}
+>
+  Join Now
+</button>
   </div>
 </div>
 
@@ -371,7 +377,12 @@ const Directory = () => {
 </p>
 
 
-                  <button className="join-btn" onclick="window.location.href='https://discord.gg/sZBU2bSSGN'">Join Now</button>
+ <button 
+  className="join-btn" 
+  onClick={() => window.location.href='https://discord.gg/sZBU2bSSGN'}
+>
+  Join Now
+</button>
                 </div>
               ))}
             </div>
