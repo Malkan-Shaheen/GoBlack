@@ -115,10 +115,11 @@ const Tabdirectory = () => {
     <div dangerouslySetInnerHTML={{ __html: item.text }} />
  <button 
   className="join-btn1" 
-  onClick={() => window.location.href='https://discord.gg/sZBU2bSSGN'}
+  onClick={() => window.open('https://discord.gg/sZBU2bSSGN', '_blank')}
 >
   Join Now
-</button>  </div>
+</button>
+ </div>
 </div>
 
       ))}

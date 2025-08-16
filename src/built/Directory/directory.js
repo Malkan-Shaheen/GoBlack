@@ -272,12 +272,13 @@ const Directory = () => {
       ))}
     </div>
 
-    <button 
+   <button 
   className="join-btn" 
-  onClick={() => window.location.href='https://discord.gg/sZBU2bSSGN'}
+  onClick={() => window.open('https://discord.gg/sZBU2bSSGN', '_blank')}
 >
   Join Now
 </button>
+
   </div>
 </div>
 
@@ -377,12 +378,13 @@ const Directory = () => {
 </p>
 
 
- <button 
+<button 
   className="join-btn" 
-  onClick={() => window.location.href='https://discord.gg/sZBU2bSSGN'}
+  onClick={() => window.open('https://discord.gg/sZBU2bSSGN', '_blank')}
 >
   Join Now
 </button>
+
                 </div>
               ))}
             </div>

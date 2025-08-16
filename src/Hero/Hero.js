@@ -24,10 +24,11 @@ const ProjectBlackLanding = () => {
          
 <button 
   className="cta-button" 
-  onClick={() => window.location.href='https://discord.gg/sZBU2bSSGN'}
+  onClick={() => window.open('https://discord.gg/sZBU2bSSGN', '_blank')}
 >
   Join Now
 </button>
+
           <div className="countdown-wrapper">
             <p className="coming-soon">Coming Soon </p>
             <FlipClock /> 
