@@ -22,8 +22,12 @@ const ProjectBlackLanding = () => {
             We Reshape Narratives, Fund Innovation, And Create Opportunities For Lasting Legacies.
           </p>
          
-          <button className="cta-button" onclick="window.location.href='https://discord.gg/sZBU2bSSGN'">Join Now</button>
-
+<button 
+  className="cta-button" 
+  onClick={() => window.location.href='https://discord.gg/sZBU2bSSGN'}
+>
+  Join Now
+</button>
           <div className="countdown-wrapper">
             <p className="coming-soon">Coming Soon </p>
             <FlipClock /> 
