@@ -42,7 +42,7 @@ export default async function handler(req, res) {
       "Referer": "https://go-black-beta.vercel.app/contact"
     };
 
-    const response = await fetch("https://formsubmit.co/ajax/malkanshaheenit@gmail.com", {
+    const response = await fetch("https://formsubmit.co/ajax/info@goprojectblack.com", {
       method: "POST",
       headers: formsubmitHeaders,
       body: JSON.stringify(payload)
