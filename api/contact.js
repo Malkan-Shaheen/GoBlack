@@ -25,7 +25,7 @@ export default async function handler(req, res) {
 try {
   console.log("Sending to FormSubmit:", req.body); // Add this line
   
-  const formsubmitResponse = await fetch("https://formsubmit.co/ajax/malkanshaheen45@gmail.com", {
+  const formsubmitResponse = await fetch("https://formsubmit.co/ajax/malkanshaheenit@gmail.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
