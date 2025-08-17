@@ -7,7 +7,7 @@ const Header = () => {
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const menuRef = useRef(null);
-
+// Function to toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -15,17 +15,13 @@ const Header = () => {
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
-
-
   useEffect(() => {
   const handleUserActivity = (event) => {
-    // If click/touch is inside the menu or hamburger, do nothing
     if (menuRef.current && menuRef.current.contains(event.target)) {
       return;
     }
     closeMobileMenu();
   };
-
   if (isMobileMenuOpen) {
     document.addEventListener('mousedown', handleUserActivity);
     document.addEventListener('touchstart', handleUserActivity);
@@ -40,9 +36,7 @@ const Header = () => {
     window.removeEventListener('keydown', closeMobileMenu);
   };
 }, [isMobileMenuOpen]);
-
-
-
+  // Render the header component
   return (
     <header className="custom-header">
       <div className="header-inner">
@@ -71,7 +65,7 @@ const Header = () => {
           <button 
             className={`hamburger ${isMobileMenuOpen ? 'active' : ''}`} 
             onClick={(e) => {
-              e.stopPropagation(); // Prevent the click from bubbling to document
+              e.stopPropagation();
               toggleMobileMenu();
             }}
             aria-label="Menu"
@@ -81,7 +75,6 @@ const Header = () => {
             <span className="hamburger-line"></span>
             <span className="hamburger-line"></span>
           </button>
-
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="mobile-menu">

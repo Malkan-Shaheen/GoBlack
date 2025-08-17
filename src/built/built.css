@@ -13,18 +13,7 @@
 /* Background Image scrolls normally */
 .bp-image-container {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   z-index: 0;
-}
-
-.bp-main-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top;
 }
 
 /* Container for sticky text */
@@ -62,8 +51,6 @@
   }
 
   .bp-image-container {
-    height:100%;
-    top: 450px;
     width: 110vw;
     background-size: cover;
     background-position: center top;
@@ -75,9 +62,6 @@
   }
   .bp-main-image {
     width: 100%;             
-  height: 100%;             
-  object-fit: contain;
-  object-position: center top;
   display: block;  
   }
 

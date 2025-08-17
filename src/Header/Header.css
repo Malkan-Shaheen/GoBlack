@@ -22,7 +22,6 @@
   background: linear-gradient(90deg, rgba(31, 19, 9, 0.8) 0%, rgba(23, 15, 5, 0.8) 17.79%, rgba(17, 11, 3, 0.8) 32.02%, rgba(13, 9, 2, 0.8) 48.32%, rgba(13, 7, 2, 0.8) 67.23%, rgba(10, 6, 1, 0.8) 85.74%, rgba(11, 7, 2, 0.8) 100%);
   border-top: 1px solid white;
   border-bottom: 1px solid #FFFFFF1A;
-  font-family: 'Satoshi', sans-serif;
   box-sizing: border-box;
 }
 
@@ -174,14 +173,8 @@ cursor:pointer;
 /* Tablet screens */
 @media (max-width: 1024px) {
   :root {
-    --header-padding-x: 16px;
     --nav-gap: 16px;
   }
-
-  .logo-img {
-    height: 42px;
-  }
-
   .lineage-button {
     padding: 10px 16px;
     font-size: 13px;

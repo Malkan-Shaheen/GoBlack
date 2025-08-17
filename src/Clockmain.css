@@ -16,12 +16,10 @@
 
 
 .flipUnitContainer1 {
-  display: block;
   position: relative;
   perspective-origin: 50% 50%;
   perspective: 300px;
   background: linear-gradient(to bottom, #E4C658 0%, #9E6A17 100%);
-  border-radius: 3px;
 width: clamp(40px, 10vw, 60px);
   height: 48px;
   border-radius: 4.57px;
@@ -203,9 +201,6 @@ width: clamp(40px, 10vw, 60px);
 }
 
 .flipUnitWrapper1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   position: relative;
 }
 
@@ -213,21 +208,13 @@ width: clamp(40px, 10vw, 60px);
   position: absolute;
   right: -15px;
   top: 9%;
-  font-size: 1.5rem;
   font-weight: bold;
-  color: white;
-  pointer-events: none;
 }
 
 .unitLabel1 {
-  margin-top: 6px;
-  text-transform: uppercase;
-  color: #eee;
-  letter-spacing: 0.5px;
   font-family: 'Poppins';
   font-weight: 400;
   font-style: Regular;
-  font-size: 11.76px;
   line-height: 100%;
   text-align: center;
   margin: 10px 0 0 0;

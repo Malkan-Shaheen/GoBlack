@@ -1,7 +1,6 @@
 .vision-wrapper {
   padding: 30px 30px;
   background: #121212;
-  color: #ffffff;
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -9,10 +8,8 @@
 }
 
 .vision-heading {
-  font-size: 28px;
   font-weight: 700;
   line-height: 1.4;
-  text-align: center;
   margin-bottom: 30px;
   color: #fff;
 }
@@ -29,7 +26,6 @@
 
 /* Common image styles like frame-img */
 .vision-img {
-  object-fit: cover;
   display: block;
   transition: all 0.3s ease;
   transform-origin: center center;
@@ -38,8 +34,6 @@
 
 /* Specific sizes matching frame-img-1 to 4 */
 .vision-img:nth-child(1) {
-  width: 336.75px;
-  height: 269.25px;
   border: 3px solid;
   border-image: linear-gradient(90deg, #CD9E3C 0%, #BD8A2D 100%);
   border-image-slice: 1;
@@ -85,8 +79,7 @@
 
 /* Animations */
 .slide-up {
-  opacity: 0;
-  transform: translateY(20px);
+  
   animation: slideUp 0.6s ease-out forwards;
 }
 .delay-1 {
@@ -108,11 +101,9 @@
 
 /* Description Text */
 .vision-text {
-  font-size: 12px;
   line-height: 1.6;
   color: #cccccc;
   max-width: 600px;
-  text-align: left;
 }
 .vision-text p {
   margin-bottom: 16px;
@@ -150,12 +141,6 @@
 
   .vision-img:nth-child(4) {
     margin-top: 0 !important;
-  }
-
-  .vision-text {
-    font-size: 12px;
-    padding: 0 5px;
-    text-align: left;
   }
 
   .vision-text p {

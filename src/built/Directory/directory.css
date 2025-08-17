@@ -51,16 +51,6 @@ cursor:pointer;
 }
 
 
-  .scroll-triggers {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 400vh; 
-    z-index: 5;
-    pointer-events: none; 
-  }
-
   .scroll-trigger {
     height: 100vh;
     width: 100%;
@@ -273,18 +263,6 @@ cursor:pointer;
   transform: translateY(0);
 }
 
-.scroll-triggers {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: 5;
-  pointer-events: none;
-}
-
 .scroll-trigger {
   height: 100vh;
   width: 100%;
@@ -376,7 +354,6 @@ cursor:pointer;
     height: 400vh;
     z-index: 5;
     pointer-events: none;
-    display: flex;
     flex-direction: column;
   }
 
